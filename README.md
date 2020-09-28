@@ -27,12 +27,34 @@ POST: /login/admin
   password:"" (String)
 }
 ```
+```
+Return:
+{
+  status:0,
+  success:True,
+  Data:{
+    adminID:""(String)
+  },
+  message:""(String)
+}
+```
 2. Customer Login
 ```
 POST: /login/user
 {
   email:""(String),
   password:"" (String)
+}
+```
+```
+Return:
+{
+  status:0,
+  success:True,
+  Data:{
+    userID:""(String)
+  },
+  message:""(String)
 }
 ```
 ### Register Function
@@ -48,11 +70,23 @@ PUT: /register/user
   comment:""(String)
 }
 ```
+```
+Return:
+{
+  status:0,
+  success:True,
+  Data:{
+    userID:""(String)
+  },
+  message:""(String)
+}
+```
 ### Detail Management
 1. Personal Detail Update
 ```
 POST: /user/personal
 {
+  userID:""(UUID),
   nanme:""(String),
   address:""(String),
   phone:""(String),
@@ -61,12 +95,43 @@ POST: /user/personal
   comment:""(String)
 }
 ```
+```
+Return:
+{
+  status:0,
+  success:True,
+  Data:{
+    userID:""(UUID),
+    nanme:""(String),
+    address:""(String),
+    phone:""(String),
+    email:""(String),
+    password:""(String),
+    comment:""(String)
+  },
+  message:""(String)
+}
+```
 2. Biller Detail Update
 ```
 POST: /user/biller
 {
+  billerID:""(UUID),
   nanme:""(String),
   address:""(String)
+}
+```
+```
+Return:
+{
+  status:0,
+  success:True,
+  Data:{
+    billerID:""(UUID),
+    nanme:""(String),
+    address:""(String)
+  },
+  message:""(String)
 }
 ```
 ### Service Management
@@ -74,17 +139,53 @@ POST: /user/biller
 ```
 GET: /Service
 ```
+```
+Return:
+{
+  status:0,
+  success:True,
+  Data:{
+    serviceList:[](list)
+  },
+  message:""(String)
+}
+```
 2. Avaliable Service time
 ```
 GET: /Service/serviceID
+```
+```
+Return:
+{
+  status:0,
+  success:True,
+  Data:{
+    avaliableTime:[](list)
+  },
+  message:""(String)
+}
 ```
 3. Service Create
 ```
 PUT: /Service
 {
   serviceName:""(String),
-  cost:""(Float)
-  duration:""(Float),
+  cost:""(Float),
+  duration:""(Float)
+}
+```
+```
+Return:
+{
+  status:0,
+  success:True,
+  Data:{
+    serviceID:""(UUID),
+    serviceName:""(String),
+    cost:""(Float),
+    duration:""(Float)
+  },
+  message:""(String)
 }
 ```
 4. Service Update
@@ -97,11 +198,34 @@ POST: /Service
   duration:""(Float)
 }
 ```
+```
+Return:
+{
+  status:0,
+  success:True,
+  Data:{
+    serviceID:""(UUID),
+    serviceName:""(String),
+    cost:""(Float),
+    duration:""(Float)
+  },
+  message:""(String)
+}
+```
 5. Service Delete
 ```
 Delete: /Service
 {
   serviceID:""(UUID)
+}
+```
+```
+Return:
+{
+  status:0,
+  success:True,
+  Data: null,
+  message:""(String)
 }
 ```
 ### Appoinment Service
@@ -114,6 +238,17 @@ POST: /appoinment/user
   status""(String)
 }
 ```
+```
+Return:
+{
+  status:0,
+  success:True,
+  Data:{
+    appointmentList:[](list)
+  },
+  message:""(String)
+}
+```
 2. Appoinment View for Admin
 ```
 POST: /appoinment/admin
@@ -121,6 +256,17 @@ POST: /appoinment/admin
   userName:""(String),
   serviceID""(UUID),
   status""(String)
+}
+```
+```
+Return:
+{
+  status:0,
+  success:True,
+  Data:{
+    appointmentList:[](list)
+  },
+  message:""(String)
 }
 ```
 3. Appoinment Create
@@ -134,11 +280,35 @@ PUT: /appoinment
   location:""(String)
 }
 ```
+```
+Return:
+{
+  status:0,
+  success:True,
+  Data:{
+    userID:""(UUID),
+    serviceID:""(UUID),
+    message:""(String),
+    time:""(DateTime),
+    location:""(String)
+  },
+  message:""(String)
+}
+```
 4. Appoinment Cancel
 ```
 POST: /appoinment/cancel
 {
   appointmentID:""(UUID)
+}
+```
+```
+Return:
+{
+  status:0,
+  success:True,
+  Data:null
+  message:""(String)
 }
 ```
 ## Database Table
