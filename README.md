@@ -17,7 +17,7 @@
 * Vue
 ### Database
 * Postgresql
-## API specification
+## API Specification
 ### Login Function
 1. Admin Login
 ```
