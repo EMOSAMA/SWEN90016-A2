@@ -1,4 +1,6 @@
 # SWEN90016-A2
+## Description
+Building a simple online appointment website
 ## Requirements
 ### Admin Panel
 1. Admin can login to system by initial username/email and password
