@@ -6,5 +6,7 @@
 3. Admin can view and manage all appointmemt here
 ### Customer Panel
 1. Customers can register and login
-2. Customers can make an appointment and a notification email will be send to hoster
-3. Customers can cancel their appointment and also a related notification will be send to hoster
+2. Customers can add payment details
+3. Customers can manage their personal details and payment details
+3. Customers can make an appointment and a notification email will be send to hoster
+4. Customers can cancel their appointment and also a related notification will be send to hoster
