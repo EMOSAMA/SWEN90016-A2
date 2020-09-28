@@ -21,6 +21,7 @@
 ### Login Function
 1. Admin Login
 ```
+*Send:*
 POST: /login/admin
 {
   email:""(String),
@@ -28,7 +29,7 @@ POST: /login/admin
 }
 ```
 ```
-Return:
+*Return:*
 {
   status:0,
   success:True,
@@ -40,6 +41,7 @@ Return:
 ```
 2. Customer Login
 ```
+*Send:*
 POST: /login/user
 {
   email:""(String),
@@ -47,7 +49,7 @@ POST: /login/user
 }
 ```
 ```
-Return:
+*Return:*
 {
   status:0,
   success:True,
@@ -60,6 +62,7 @@ Return:
 ### Register Function
 1. Customer Register
 ```
+*Send:*
 PUT: /register/user
 {
   nanme:""(String),
@@ -71,7 +74,7 @@ PUT: /register/user
 }
 ```
 ```
-Return:
+*Return:*
 {
   status:0,
   success:True,
@@ -84,6 +87,7 @@ Return:
 ### Detail Management
 1. Personal Detail Update
 ```
+*Send:*
 POST: /user/personal
 {
   userID:""(UUID),
@@ -96,7 +100,7 @@ POST: /user/personal
 }
 ```
 ```
-Return:
+*Return:*
 {
   status:0,
   success:True,
@@ -114,6 +118,7 @@ Return:
 ```
 2. Biller Detail Update
 ```
+*Send:*
 POST: /user/biller
 {
   billerID:""(UUID),
@@ -122,7 +127,7 @@ POST: /user/biller
 }
 ```
 ```
-Return:
+*Return:*
 {
   status:0,
   success:True,
@@ -137,10 +142,11 @@ Return:
 ### Service Management
 1. Avaliable Service
 ```
+*Send:*
 GET: /Service
 ```
 ```
-Return:
+*Return:*
 {
   status:0,
   success:True,
@@ -152,10 +158,11 @@ Return:
 ```
 2. Avaliable Service time
 ```
+*Send:*
 GET: /Service/serviceID
 ```
 ```
-Return:
+*Return:*
 {
   status:0,
   success:True,
@@ -167,6 +174,7 @@ Return:
 ```
 3. Service Create
 ```
+*Send:*
 PUT: /Service
 {
   serviceName:""(String),
@@ -175,7 +183,7 @@ PUT: /Service
 }
 ```
 ```
-Return:
+*Return:*
 {
   status:0,
   success:True,
@@ -190,6 +198,7 @@ Return:
 ```
 4. Service Update
 ```
+*Send:*
 POST: /Service
 {
   serviceID:""(UUID),
@@ -199,7 +208,7 @@ POST: /Service
 }
 ```
 ```
-Return:
+*Return:*
 {
   status:0,
   success:True,
@@ -214,13 +223,14 @@ Return:
 ```
 5. Service Delete
 ```
+*Send:*
 Delete: /Service
 {
   serviceID:""(UUID)
 }
 ```
 ```
-Return:
+*Return:*
 {
   status:0,
   success:True,
@@ -231,6 +241,7 @@ Return:
 ### Appoinment Service
 1. Appoinment View for Customer
 ```
+*Send:*
 POST: /appoinment/user
 {
   userID:""(UUID),
@@ -239,7 +250,7 @@ POST: /appoinment/user
 }
 ```
 ```
-Return:
+*Return:*
 {
   status:0,
   success:True,
@@ -251,6 +262,7 @@ Return:
 ```
 2. Appoinment View for Admin
 ```
+*Send:*
 POST: /appoinment/admin
 {
   userName:""(String),
@@ -259,7 +271,7 @@ POST: /appoinment/admin
 }
 ```
 ```
-Return:
+*Return:*
 {
   status:0,
   success:True,
@@ -271,6 +283,7 @@ Return:
 ```
 3. Appoinment Create
 ```
+*Send:*
 PUT: /appoinment
 {
   userID:""(UUID),
@@ -281,7 +294,7 @@ PUT: /appoinment
 }
 ```
 ```
-Return:
+*Return:*
 {
   status:0,
   success:True,
@@ -297,13 +310,14 @@ Return:
 ```
 4. Appoinment Cancel
 ```
+*Send:*
 POST: /appoinment/cancel
 {
   appointmentID:""(UUID)
 }
 ```
 ```
-Return:
+*Return:*
 {
   status:0,
   success:True,
