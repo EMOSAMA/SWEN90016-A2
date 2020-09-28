@@ -19,17 +19,17 @@
 * Postgresql
 ## API Specification
 ### Login Function
-1. Admin Login
+**1. Admin Login**
+Send：
 ```
-**Send:**
 POST: /login/admin
 {
   email:""(String),
   password:"" (String)
 }
 ```
+Return:
 ```
-**Return:**
 {
   status:0,
   success:True,
@@ -39,9 +39,9 @@ POST: /login/admin
   message:""(String)
 }
 ```
-2. Customer Login
+**2. Customer Login**
+Send:
 ```
-**Send:**
 POST: /login/user
 {
   email:""(String),
