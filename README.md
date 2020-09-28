@@ -19,7 +19,7 @@
 * Postgresql
 ## API Specification
 ### Login Function
-**1. Admin Login
+**1. Admin Login**<br>
 Send：
 ```
 POST: /login/admin
