@@ -19,7 +19,7 @@
 * Postgresql
 ## API specification
 ### Login Function
-#### *Admin Login
+#### 1. Admin Login
 ```
 POST: /login/admin
 {
@@ -27,7 +27,7 @@ POST: /login/admin
   password:"" (String)
 }
 ```
-#### *Customer Login
+#### 2. Customer Login
 ```
 POST: /login/user
 {
@@ -36,7 +36,7 @@ POST: /login/user
 }
 ```
 ### Register Function
-#### *Customer Register
+#### 1. Customer Register
 ```
 PUT: /register/user
 {
@@ -49,7 +49,7 @@ PUT: /register/user
 }
 ```
 ### Detail Management
-#### *Personal Detail Update
+#### 1. Personal Detail Update
 ```
 POST: /user/personal
 {
@@ -61,7 +61,7 @@ POST: /user/personal
   comment:""(String)
 }
 ```
-#### *Biller Detail Update
+#### 2. Biller Detail Update
 ```
 POST: /user/biller
 {
@@ -70,15 +70,15 @@ POST: /user/biller
 }
 ```
 ### Service Management
-#### *Avaliable Service
+#### 1. Avaliable Service
 ```
 GET: /Service
 ```
-#### *Avaliable Service time
+#### 2. Avaliable Service time
 ```
 GET: /Service/serviceID
 ```
-#### *Service Create
+#### 3. Service Create
 ```
 PUT: /Service
 {
@@ -87,7 +87,7 @@ PUT: /Service
   duration:""(Float),
 }
 ```
-#### *Service Update
+#### 4. Service Update
 ```
 POST: /Service
 {
@@ -97,7 +97,7 @@ POST: /Service
   duration:""(Float)
 }
 ```
-#### *Service Delete
+#### 5. Service Delete
 ```
 Delete: /Service
 {
@@ -105,7 +105,7 @@ Delete: /Service
 }
 ```
 ### Appoinment Service
-#### *Appoinment View for Customer
+#### 1. Appoinment View for Customer
 ```
 POST: /appoinment/user
 {
@@ -114,7 +114,7 @@ POST: /appoinment/user
   status""(String)
 }
 ```
-#### *Appoinment View for Admin
+#### 2. Appoinment View for Admin
 ```
 POST: /appoinment/admin
 {
@@ -123,7 +123,7 @@ POST: /appoinment/admin
   status""(String)
 }
 ```
-#### *Appoinment Create
+#### 3. Appoinment Create
 ```
 PUT: /appoinment
 {
@@ -133,7 +133,7 @@ PUT: /appoinment
   time:""(DateTime)
 }
 ```
-#### *Appoinment Cancel
+#### 4. Appoinment Cancel
 ```
 POST: /appoinment/cancel
 {
