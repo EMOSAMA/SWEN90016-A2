@@ -20,24 +20,24 @@
 ## API specification
 ### Login Function
 #### Admin Login
-'''
+```
 POST: /login/admin
 {
   username:""(String),
   password:"" (String)
 }
-'''
+```
 #### Customer Login
-'''
+```
 POST: /login/user
 {
   username:""(String),
   password:"" (String)
 }
-'''
+```
 ### Register Function
 #### Customer Register
-'''
+```
 PUT: /register/user
 {
   nanme:""(String),
@@ -47,10 +47,10 @@ PUT: /register/user
   password:""(String),
   comment:""(String)
 }
-'''
+```
 ### Detail Management
 #### Personal Detail Update
-'''
+```
 POST: /user/personal
 {
   nanme:""(String),
@@ -60,35 +60,35 @@ POST: /user/personal
   password:""(String),
   comment:""(String)
 }
-'''
+```
 #### Biller Detail Update
-'''
+```
 POST: /user/biller
 {
   nanme:""(String),
   address:""(String)
 }
-'''
+```
 ### Service Management
 #### Avaliable Service
-'''
+```
 GET: /Service
-'''
+```
 #### Avaliable Service time
-'''
+```
 GET: /Service/serviceID
-'''
+```
 #### Service Create
-'''
+```
 PUT: /Service
 {
   serviceName:""(String),
   cost:""(Float)
   duration:""(Float),
 }
-'''
+```
 #### Service Update
-'''
+```
 POST: /Service
 {
   serviceID:""(UUID),
@@ -96,35 +96,35 @@ POST: /Service
   cost:""(Float),
   duration:""(Float)
 }
-'''
+```
 #### Service Delete
-'''
+```
 Delete: /Service
 {
   serviceID:""(UUID)
 }
-'''
+```
 ### Appoinment Service
 #### Appoinment View for Customer
-'''
+```
 POST: /appoinment/user
 {
   userID:""(UUID),
   serviceID""(UUID),
   status""(String)
 }
-'''
+```
 #### Appoinment View for Admin
-'''
+```
 POST: /appoinment/admin
 {
   userName:""(String),
   serviceID""(UUID),
   status""(String)
 }
-'''
+```
 #### Appoinment Create
-'''
+```
 PUT: /appoinment
 {
   userID:""(UUID),
@@ -132,13 +132,13 @@ PUT: /appoinment
   message:""(String),
   time:""(DateTime)
 }
-'''
+```
 #### Appoinment Cancel
-'''
+```
 POST: /appoinment/cancel
 {
   appointmentID:""(UUID)
 }
-'''
+```
 
 
