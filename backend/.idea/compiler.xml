@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="faas-common" />
+        <module name="faas-admin-service" />
+        <module name="faas-service-dto" />
+        <module name="faas-domain" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="faas-admin-service" target="1.8" />
+      <module name="faas-common" target="1.8" />
+      <module name="faas-domain" target="1.8" />
+      <module name="faas-service" target="1.8" />
+      <module name="faas-service-dto" target="1.8" />
+      <module name="faas-services" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="faas-admin-service" options="-parameters" />
+      <module name="faas-common" options="-parameters" />
+      <module name="faas-domain" options="-parameters" />
+      <module name="faas-service-dto" options="-parameters" />
+    </option>
+  </component>
+</project>

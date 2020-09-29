@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/faas-services/faas-admin-service/faas-admin-service.iml" filepath="$PROJECT_DIR$/faas-services/faas-admin-service/faas-admin-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/faas-common/faas-common.iml" filepath="$PROJECT_DIR$/faas-common/faas-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/faas-domain/faas-domain.iml" filepath="$PROJECT_DIR$/faas-domain/faas-domain.iml" />
+      <module fileurl="file://$PROJECT_DIR$/faas-service.iml" filepath="$PROJECT_DIR$/faas-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/faas-service-dto/faas-service-dto.iml" filepath="$PROJECT_DIR$/faas-service-dto/faas-service-dto.iml" />
+      <module fileurl="file://$PROJECT_DIR$/faas-services/faas-services.iml" filepath="$PROJECT_DIR$/faas-services/faas-services.iml" />
+    </modules>
+  </component>
+</project>
