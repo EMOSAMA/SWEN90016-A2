@@ -14,7 +14,7 @@ Building a simple online appointment website
 4. Customers can cancel their appointment and also a related notification will be send to hoster
 ## Implementation
 ### Backend
-* Golang
+* Java
 ### Frontend
 * Vue
 ### Database
