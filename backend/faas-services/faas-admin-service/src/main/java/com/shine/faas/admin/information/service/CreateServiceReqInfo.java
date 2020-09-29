@@ -1,4 +1,4 @@
 package com.shine.faas.admin.information.service;
 
-public class CreateServiceReqInfo {
+public class CreateServiceReqInfo extends ServiceInfo {
 }

@@ -1,8 +1,8 @@
-package com.shine.faas.admin.information.admin;
+package com.shine.faas.admin.information.customer;
 
 import com.shine.faas.common.orm.query.PagerInfo;
 
-public class QueryAdminReqInfo extends PagerInfo {
+public class QueryCustomerReqInfo extends PagerInfo {
     private String name;
 
     public String getName() {

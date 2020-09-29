@@ -1,5 +1,5 @@
-package com.shine.faas.admin.information.admin;
+package com.shine.faas.admin.information.customer;
 
-public class CreateAdminReqInfo extends AdminInfo {
+public class CreateCustomerReqInfo extends CustomerInfo {
 
 }

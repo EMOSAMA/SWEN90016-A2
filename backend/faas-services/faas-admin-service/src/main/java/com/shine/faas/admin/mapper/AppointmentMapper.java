@@ -1,4 +1,10 @@
 package com.shine.faas.admin.mapper;
 
-public class AppointmentMapper {
+import com.shine.faas.admin.information.appointment.AppointmentInfo;
+import com.shine.faas.domain.orm.entity.Appointment;
+import org.mapstruct.Mapper;
+
+@Mapper(componentModel = "spring")
+public interface AppointmentMapper {
+    Appointment map(AppointmentInfo appointmentInfo);
 }

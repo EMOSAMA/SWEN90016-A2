@@ -8,43 +8,12 @@ import org.springframework.stereotype.Component;
 public class RepositoryFactory {
     @Autowired
     public AdminRepository adminRepository;
-
     @Autowired
-    public StudentRepository studentRepository;
-
+    public AppointmentRepository appointmentRepository;
     @Autowired
-    public DepartmentRepository departmentRepository;
-
+    public BillerRepository billerRepository;
     @Autowired
-    public MajorRepository majorRepository;
-
+    public CustomerRepository customerRepository;
     @Autowired
-    public TeacherRepository teacherRepository;
-
-    @Autowired
-    public UnitRepository unitRepository;
-
-    @Autowired
-    public SemesterRepository semesterRepository;
-
-    @Autowired
-    public ClassesRepository classesRepository;
-
-    @Autowired
-    public AllocateUnitsRepository allocateUnitsRepository;
-
-    @Autowired
-    public GradesRepository gradesRepository;
-
-    @Autowired
-    public ManageUnitsRepository manageUnitsRepository;
-
-    @Autowired
-    public ApplyProjectRepository applyProjectRepository;
-
-    @Autowired
-    public BookRepository bookRepository;
-
-    @Autowired
-    public RentBookRepository rentBookRepository;
+    public ServiceRepository serviceRepository;
 }

@@ -14,20 +14,11 @@ public class OrmLoader {
 
     public static void syncDatabase() {
         List<BaseEntity> entities = new ArrayList<>();
-        entities.add(new Student());
-        entities.add(new Teacher());
         entities.add(new Admin());
-        entities.add(new Department());
-        entities.add(new Major());
-        entities.add(new Unit());
-        entities.add(new AllocateUnits());
-        entities.add(new Classes());
-        entities.add(new Grades());
-        entities.add(new Semester());
-        entities.add(new ManageUnits());
-        entities.add(new ApplyProject());
-        entities.add(new Book());
-        entities.add(new RentBook());
+        entities.add(new Biller());
+        entities.add(new Service());
+        entities.add(new Customer());
+        entities.add(new Appointment());
         DbContext dbContext1 = OrmManager.instance().createDbContext(false);
         ActionUtil.doAction(dbContext1, () -> {
             OrmManager.instance().init(dbContext1, entities);

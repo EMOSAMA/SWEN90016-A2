@@ -1,6 +1,6 @@
 package com.shine.faas.admin.service;
 
-import com.shine.faas.admin.information.ModifyUserPwdInfo;
+import com.shine.faas.admin.information.ModifyPwdInfo;
 import com.shine.faas.admin.information.admin.CreateAdminReqInfo;
 import com.shine.faas.admin.information.admin.QueryAdminReqInfo;
 import com.shine.faas.admin.information.admin.UpdateAdminReqInfo;
@@ -13,10 +13,10 @@ import java.util.List;
 import java.util.UUID;
 
 @Component
-public interface UserService {
+public interface AdminService {
     ReturnInfo adminLogin(DbContext context, LoginReqInfo loginReqInfo) throws Exception;
 
-    ReturnInfo changePassword(DbContext context, ModifyUserPwdInfo modifyUserPwdInfo) throws Exception;
+    ReturnInfo changePassword(DbContext context, ModifyPwdInfo modifyPwdInfo) throws Exception;
 
     ReturnInfo createAdmin(DbContext context, CreateAdminReqInfo createAdminReqInfo) throws Exception;
 

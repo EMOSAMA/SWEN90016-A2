@@ -1,4 +1,4 @@
 package com.shine.faas.admin.information.biller;
 
-public class UpdateBillerInfo extends BillerInfo {
+public class UpdateBillerReqInfo extends BillerInfo {
 }

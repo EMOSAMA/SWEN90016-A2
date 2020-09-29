@@ -11,34 +11,14 @@ import java.util.UUID;
 @Entity
 @Table(name = "admin")
 public class Admin extends BaseEntity {
-    @Column(name = "username")
-    private String username;
-
     @Column(name = "password")
     private String password;
 
     @Column(name = "name")
     private String name;
 
-    @Column(name="birth")
-    private Date birth;
-
     @Column(name="email")
     private String email;
-
-    /**
-     * 是否超级管理员
-     */
-    @Column(name = "is_super")
-    private Boolean isSuper = false;
-
-    public String getUsername() {
-        return username;
-    }
-
-    public void setUsername(String username) {
-        this.username = username;
-    }
 
     public String getPassword() {
         return password;
@@ -56,14 +36,6 @@ public class Admin extends BaseEntity {
         this.name = name;
     }
 
-    public Date getBirth() {
-        return birth;
-    }
-
-    public void setBirth(Date birth) {
-        this.birth = birth;
-    }
-
     public String getEmail() {
         return email;
     }
@@ -71,13 +43,4 @@ public class Admin extends BaseEntity {
     public void setEmail(String email) {
         this.email = email;
     }
-
-    public Boolean getIsSuper() {
-        return isSuper;
-    }
-
-    public void setIsSuper(Boolean aSuper) {
-        isSuper = aSuper;
-    }
-    //endregion
 }

@@ -1,8 +1,7 @@
 package com.shine.faas.admin.orm.repository;
 
-import com.shine.faas.admin.information.user.admin.QueryAdminReqInfo;
+import com.shine.faas.admin.information.admin.QueryAdminReqInfo;
 import com.shine.faas.common.DbContext;
-import com.shine.faas.common.orm.AbstractEntity;
 import com.shine.faas.common.orm.CrudRepository;
 import com.shine.faas.common.orm.QueryHelper;
 import com.shine.faas.common.orm.query.*;

@@ -4,7 +4,7 @@ import com.shine.faas.common.orm.query.PagerInfo;
 
 import java.util.UUID;
 
-public class QueryAppointmentInfo extends PagerInfo {
+public class QueryAppointmentReqInfo extends PagerInfo {
     public UUID serviceId;
     public String customerName;
     public String status;

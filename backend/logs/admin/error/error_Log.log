@@ -2724,3 +2724,481 @@ org.postgresql.util.PSQLException: This connection has been closed.
 2020-05-17 01:39:07,612 [http-nio-7000-exec-2] ERROR c.shine.faas.common.util.ActionUtil - 没有创建上下文对象
 2020-05-17 01:39:10,687 [http-nio-7000-exec-8] ERROR c.shine.faas.common.util.ActionUtil - 没有创建上下文对象
 2020-05-17 01:39:16,399 [http-nio-7000-exec-6] ERROR c.shine.faas.common.util.ActionUtil - 没有创建上下文对象
+2020-09-29 01:57:39,542 [main] ERROR c.shine.faas.common.util.ActionUtil - 服务器错误
+java.lang.NullPointerException: null
+	at java.lang.String.replace(String.java:2240)
+	at com.shine.faas.common.util.IndentStringBuilder.format(IndentStringBuilder.java:115)
+	at com.shine.faas.common.util.IndentStringBuilder.appendFormat(IndentStringBuilder.java:121)
+	at com.shine.faas.common.orm.DatabaseSync.addTable(DatabaseSync.java:112)
+	at com.shine.faas.common.orm.DatabaseSync.lambda$null$2(DatabaseSync.java:44)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at com.shine.faas.common.orm.DatabaseSync.lambda$sync$3(DatabaseSync.java:42)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at com.shine.faas.common.orm.DatabaseSync.sync(DatabaseSync.java:41)
+	at com.shine.faas.common.orm.OrmManager.init(OrmManager.java:44)
+	at com.shine.faas.domain.orm.OrmLoader.lambda$syncDatabase$0(OrmLoader.java:24)
+	at com.shine.faas.common.util.ActionUtil.doAction(ActionUtil.java:57)
+	at com.shine.faas.domain.orm.OrmLoader.syncDatabase(OrmLoader.java:23)
+	at com.shine.faas.admin.FaasAdminServiceApplication$1.onApplicationEvent(FaasAdminServiceApplication.java:41)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:402)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:359)
+	at com.shine.faas.admin.FaasAdminServiceApplication.main(FaasAdminServiceApplication.java:50)
+2020-09-29 01:58:03,103 [main] ERROR c.shine.faas.common.util.ActionUtil - 服务器错误
+java.lang.NullPointerException: null
+	at java.lang.String.replace(String.java:2240)
+	at com.shine.faas.common.util.IndentStringBuilder.format(IndentStringBuilder.java:115)
+	at com.shine.faas.common.util.IndentStringBuilder.appendFormat(IndentStringBuilder.java:121)
+	at com.shine.faas.common.orm.DatabaseSync.addTable(DatabaseSync.java:112)
+	at com.shine.faas.common.orm.DatabaseSync.lambda$null$2(DatabaseSync.java:44)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at com.shine.faas.common.orm.DatabaseSync.lambda$sync$3(DatabaseSync.java:42)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at com.shine.faas.common.orm.DatabaseSync.sync(DatabaseSync.java:41)
+	at com.shine.faas.common.orm.OrmManager.init(OrmManager.java:44)
+	at com.shine.faas.domain.orm.OrmLoader.lambda$syncDatabase$0(OrmLoader.java:24)
+	at com.shine.faas.common.util.ActionUtil.doAction(ActionUtil.java:57)
+	at com.shine.faas.domain.orm.OrmLoader.syncDatabase(OrmLoader.java:23)
+	at com.shine.faas.admin.FaasAdminServiceApplication$1.onApplicationEvent(FaasAdminServiceApplication.java:41)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:402)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:359)
+	at com.shine.faas.admin.FaasAdminServiceApplication.main(FaasAdminServiceApplication.java:50)
+2020-09-29 01:59:48,311 [main] ERROR c.shine.faas.common.util.ActionUtil - 服务器错误
+org.springframework.jdbc.BadSqlGrammarException: PreparedStatementCallback; bad SQL grammar [create table user (
+"id" uuid NOT NULL,
+"name" varchar(255),
+"address" varchar(255),
+"phone" varchar(255),
+"email" varchar(255),
+"password" varchar(255),
+"comment" varchar(255),
+"create_time" timestamp(6),
+"create_user" uuid,
+"update_time" timestamp(6),
+"update_user" uuid,
+"recycled" bool)
+WITH (OIDS=FALSE);
+create table biller (
+"id" uuid NOT NULL,
+"user_id" uuid,
+"name" varchar(255),
+"email" varchar(255),
+"create_time" timestamp(6),
+"create_user" uuid,
+"update_time" timestamp(6),
+"update_user" uuid,
+"recycled" bool)
+WITH (OIDS=FALSE);
+create table service (
+"id" uuid NOT NULL,
+"service_name" varchar(255),
+"cost" float4,
+"duration" float4,
+"create_time" timestamp(6),
+"create_user" uuid,
+"update_time" timestamp(6),
+"update_user" uuid,
+"recycled" bool)
+WITH (OIDS=FALSE);
+]; nested exception is org.postgresql.util.PSQLException: ERROR: syntax error at or near "user"
+  位置：14
+	at org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator.doTranslate(SQLErrorCodeSQLExceptionTranslator.java:234)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:72)
+	at org.springframework.jdbc.core.JdbcTemplate.translateException(JdbcTemplate.java:1442)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:632)
+	at org.springframework.jdbc.core.JdbcTemplate.update(JdbcTemplate.java:861)
+	at org.springframework.jdbc.core.JdbcTemplate.update(JdbcTemplate.java:882)
+	at org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate.update(NamedParameterJdbcTemplate.java:320)
+	at org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate.update(NamedParameterJdbcTemplate.java:325)
+	at com.shine.faas.common.orm.DatabaseSync.sync(DatabaseSync.java:97)
+	at com.shine.faas.common.orm.OrmManager.init(OrmManager.java:44)
+	at com.shine.faas.domain.orm.OrmLoader.lambda$syncDatabase$0(OrmLoader.java:23)
+	at com.shine.faas.common.util.ActionUtil.doAction(ActionUtil.java:57)
+	at com.shine.faas.domain.orm.OrmLoader.syncDatabase(OrmLoader.java:22)
+	at com.shine.faas.admin.FaasAdminServiceApplication$1.onApplicationEvent(FaasAdminServiceApplication.java:41)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:402)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:359)
+	at com.shine.faas.admin.FaasAdminServiceApplication.main(FaasAdminServiceApplication.java:50)
+Caused by: org.postgresql.util.PSQLException: ERROR: syntax error at or near "user"
+  位置：14
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2440)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2183)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:308)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:441)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:365)
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:143)
+	at org.postgresql.jdbc.PgPreparedStatement.executeUpdate(PgPreparedStatement.java:120)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeUpdate(ProxyPreparedStatement.java:61)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeUpdate(HikariProxyPreparedStatement.java)
+	at org.springframework.jdbc.core.JdbcTemplate.lambda$update$0(JdbcTemplate.java:866)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:616)
+	... 16 common frames omitted
+2020-09-29 02:03:00,190 [main] ERROR c.shine.faas.common.util.ActionUtil - 服务器错误
+org.springframework.jdbc.BadSqlGrammarException: PreparedStatementCallback; bad SQL grammar [create table user (
+"id" uuid NOT NULL,
+"name" varchar(255),
+"address" varchar(255),
+"phone" varchar(255),
+"email" varchar(255),
+"password" varchar(255),
+"comment" varchar(255),
+"create_time" timestamp(6),
+"create_user" uuid,
+"update_time" timestamp(6),
+"update_user" uuid,
+"recycled" bool)
+WITH (OIDS=FALSE);
+]; nested exception is org.postgresql.util.PSQLException: ERROR: syntax error at or near "user"
+  位置：14
+	at org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator.doTranslate(SQLErrorCodeSQLExceptionTranslator.java:234)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:72)
+	at org.springframework.jdbc.core.JdbcTemplate.translateException(JdbcTemplate.java:1442)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:632)
+	at org.springframework.jdbc.core.JdbcTemplate.update(JdbcTemplate.java:861)
+	at org.springframework.jdbc.core.JdbcTemplate.update(JdbcTemplate.java:882)
+	at org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate.update(NamedParameterJdbcTemplate.java:320)
+	at org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate.update(NamedParameterJdbcTemplate.java:325)
+	at com.shine.faas.common.orm.DatabaseSync.sync(DatabaseSync.java:97)
+	at com.shine.faas.common.orm.OrmManager.init(OrmManager.java:44)
+	at com.shine.faas.domain.orm.OrmLoader.lambda$syncDatabase$0(OrmLoader.java:21)
+	at com.shine.faas.common.util.ActionUtil.doAction(ActionUtil.java:57)
+	at com.shine.faas.domain.orm.OrmLoader.syncDatabase(OrmLoader.java:20)
+	at com.shine.faas.admin.FaasAdminServiceApplication$1.onApplicationEvent(FaasAdminServiceApplication.java:41)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:402)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:359)
+	at com.shine.faas.admin.FaasAdminServiceApplication.main(FaasAdminServiceApplication.java:50)
+Caused by: org.postgresql.util.PSQLException: ERROR: syntax error at or near "user"
+  位置：14
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2440)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2183)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:308)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:441)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:365)
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:143)
+	at org.postgresql.jdbc.PgPreparedStatement.executeUpdate(PgPreparedStatement.java:120)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeUpdate(ProxyPreparedStatement.java:61)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeUpdate(HikariProxyPreparedStatement.java)
+	at org.springframework.jdbc.core.JdbcTemplate.lambda$update$0(JdbcTemplate.java:866)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:616)
+	... 16 common frames omitted
+2020-09-29 02:03:26,727 [main] ERROR c.shine.faas.common.util.ActionUtil - 服务器错误
+java.lang.NullPointerException: null
+	at java.lang.String.replace(String.java:2240)
+	at com.shine.faas.common.util.IndentStringBuilder.format(IndentStringBuilder.java:115)
+	at com.shine.faas.common.util.IndentStringBuilder.appendFormat(IndentStringBuilder.java:121)
+	at com.shine.faas.common.orm.DatabaseSync.addTable(DatabaseSync.java:112)
+	at com.shine.faas.common.orm.DatabaseSync.lambda$null$2(DatabaseSync.java:44)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at com.shine.faas.common.orm.DatabaseSync.lambda$sync$3(DatabaseSync.java:42)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at com.shine.faas.common.orm.DatabaseSync.sync(DatabaseSync.java:41)
+	at com.shine.faas.common.orm.OrmManager.init(OrmManager.java:44)
+	at com.shine.faas.domain.orm.OrmLoader.lambda$syncDatabase$0(OrmLoader.java:23)
+	at com.shine.faas.common.util.ActionUtil.doAction(ActionUtil.java:57)
+	at com.shine.faas.domain.orm.OrmLoader.syncDatabase(OrmLoader.java:22)
+	at com.shine.faas.admin.FaasAdminServiceApplication$1.onApplicationEvent(FaasAdminServiceApplication.java:41)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:402)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:359)
+	at com.shine.faas.admin.FaasAdminServiceApplication.main(FaasAdminServiceApplication.java:50)
+2020-09-29 02:03:50,998 [main] ERROR c.shine.faas.common.util.ActionUtil - 服务器错误
+java.lang.NullPointerException: null
+	at java.lang.String.replace(String.java:2240)
+	at com.shine.faas.common.util.IndentStringBuilder.format(IndentStringBuilder.java:115)
+	at com.shine.faas.common.util.IndentStringBuilder.appendFormat(IndentStringBuilder.java:121)
+	at com.shine.faas.common.orm.DatabaseSync.addTable(DatabaseSync.java:112)
+	at com.shine.faas.common.orm.DatabaseSync.lambda$null$2(DatabaseSync.java:44)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at com.shine.faas.common.orm.DatabaseSync.lambda$sync$3(DatabaseSync.java:42)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at com.shine.faas.common.orm.DatabaseSync.sync(DatabaseSync.java:41)
+	at com.shine.faas.common.orm.OrmManager.init(OrmManager.java:44)
+	at com.shine.faas.domain.orm.OrmLoader.lambda$syncDatabase$0(OrmLoader.java:23)
+	at com.shine.faas.common.util.ActionUtil.doAction(ActionUtil.java:57)
+	at com.shine.faas.domain.orm.OrmLoader.syncDatabase(OrmLoader.java:22)
+	at com.shine.faas.admin.FaasAdminServiceApplication$1.onApplicationEvent(FaasAdminServiceApplication.java:41)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:402)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:359)
+	at com.shine.faas.admin.FaasAdminServiceApplication.main(FaasAdminServiceApplication.java:50)
+2020-09-29 02:07:41,718 [main] ERROR c.shine.faas.common.util.ActionUtil - 服务器错误
+java.lang.NullPointerException: null
+	at java.lang.String.replace(String.java:2240)
+	at com.shine.faas.common.util.IndentStringBuilder.format(IndentStringBuilder.java:115)
+	at com.shine.faas.common.util.IndentStringBuilder.appendFormat(IndentStringBuilder.java:121)
+	at com.shine.faas.common.orm.DatabaseSync.addTable(DatabaseSync.java:112)
+	at com.shine.faas.common.orm.DatabaseSync.lambda$null$2(DatabaseSync.java:44)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at com.shine.faas.common.orm.DatabaseSync.lambda$sync$3(DatabaseSync.java:42)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at com.shine.faas.common.orm.DatabaseSync.sync(DatabaseSync.java:41)
+	at com.shine.faas.common.orm.OrmManager.init(OrmManager.java:44)
+	at com.shine.faas.domain.orm.OrmLoader.lambda$syncDatabase$0(OrmLoader.java:24)
+	at com.shine.faas.common.util.ActionUtil.doAction(ActionUtil.java:57)
+	at com.shine.faas.domain.orm.OrmLoader.syncDatabase(OrmLoader.java:23)
+	at com.shine.faas.admin.FaasAdminServiceApplication$1.onApplicationEvent(FaasAdminServiceApplication.java:41)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:402)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:359)
+	at com.shine.faas.admin.FaasAdminServiceApplication.main(FaasAdminServiceApplication.java:50)
+2020-09-29 02:08:32,165 [main] ERROR c.shine.faas.common.util.ActionUtil - 服务器错误
+java.lang.NullPointerException: null
+	at com.shine.faas.common.orm.DatabaseSync.addTable(DatabaseSync.java:104)
+	at com.shine.faas.common.orm.DatabaseSync.lambda$null$2(DatabaseSync.java:44)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at com.shine.faas.common.orm.DatabaseSync.lambda$sync$3(DatabaseSync.java:42)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at com.shine.faas.common.orm.DatabaseSync.sync(DatabaseSync.java:41)
+	at com.shine.faas.common.orm.OrmManager.init(OrmManager.java:44)
+	at com.shine.faas.domain.orm.OrmLoader.lambda$syncDatabase$0(OrmLoader.java:24)
+	at com.shine.faas.common.util.ActionUtil.doAction(ActionUtil.java:57)
+	at com.shine.faas.domain.orm.OrmLoader.syncDatabase(OrmLoader.java:23)
+	at com.shine.faas.admin.FaasAdminServiceApplication$1.onApplicationEvent(FaasAdminServiceApplication.java:41)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:402)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:359)
+	at com.shine.faas.admin.FaasAdminServiceApplication.main(FaasAdminServiceApplication.java:50)
+2020-09-29 02:09:14,972 [main] ERROR c.shine.faas.common.util.ActionUtil - 服务器错误
+org.springframework.jdbc.BadSqlGrammarException: PreparedStatementCallback; bad SQL grammar [create table user (
+"id" uuid NOT NULL,
+"name" varchar(255),
+"address" varchar(255),
+"create_time" timestamp(6),
+"create_user" uuid,
+"update_time" timestamp(6),
+"update_user" uuid,
+"recycled" bool)
+WITH (OIDS=FALSE);
+]; nested exception is org.postgresql.util.PSQLException: ERROR: syntax error at or near "user"
+  位置：14
+	at org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator.doTranslate(SQLErrorCodeSQLExceptionTranslator.java:234)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:72)
+	at org.springframework.jdbc.core.JdbcTemplate.translateException(JdbcTemplate.java:1442)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:632)
+	at org.springframework.jdbc.core.JdbcTemplate.update(JdbcTemplate.java:861)
+	at org.springframework.jdbc.core.JdbcTemplate.update(JdbcTemplate.java:882)
+	at org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate.update(NamedParameterJdbcTemplate.java:320)
+	at org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate.update(NamedParameterJdbcTemplate.java:325)
+	at com.shine.faas.common.orm.DatabaseSync.sync(DatabaseSync.java:97)
+	at com.shine.faas.common.orm.OrmManager.init(OrmManager.java:44)
+	at com.shine.faas.domain.orm.OrmLoader.lambda$syncDatabase$0(OrmLoader.java:24)
+	at com.shine.faas.common.util.ActionUtil.doAction(ActionUtil.java:57)
+	at com.shine.faas.domain.orm.OrmLoader.syncDatabase(OrmLoader.java:23)
+	at com.shine.faas.admin.FaasAdminServiceApplication$1.onApplicationEvent(FaasAdminServiceApplication.java:41)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:402)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:359)
+	at com.shine.faas.admin.FaasAdminServiceApplication.main(FaasAdminServiceApplication.java:50)
+Caused by: org.postgresql.util.PSQLException: ERROR: syntax error at or near "user"
+  位置：14
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2440)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2183)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:308)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:441)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:365)
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:143)
+	at org.postgresql.jdbc.PgPreparedStatement.executeUpdate(PgPreparedStatement.java:120)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeUpdate(ProxyPreparedStatement.java:61)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeUpdate(HikariProxyPreparedStatement.java)
+	at org.springframework.jdbc.core.JdbcTemplate.lambda$update$0(JdbcTemplate.java:866)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:616)
+	... 16 common frames omitted
+2020-09-29 02:11:58,183 [main] ERROR c.shine.faas.common.util.ActionUtil - 服务器错误
+java.lang.NullPointerException: null
+	at java.lang.String.replace(String.java:2240)
+	at com.shine.faas.common.util.IndentStringBuilder.format(IndentStringBuilder.java:115)
+	at com.shine.faas.common.util.IndentStringBuilder.appendFormat(IndentStringBuilder.java:121)
+	at com.shine.faas.common.orm.DatabaseSync.addTable(DatabaseSync.java:112)
+	at com.shine.faas.common.orm.DatabaseSync.lambda$null$2(DatabaseSync.java:44)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at com.shine.faas.common.orm.DatabaseSync.lambda$sync$3(DatabaseSync.java:42)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at com.shine.faas.common.orm.DatabaseSync.sync(DatabaseSync.java:41)
+	at com.shine.faas.common.orm.OrmManager.init(OrmManager.java:44)
+	at com.shine.faas.domain.orm.OrmLoader.lambda$syncDatabase$0(OrmLoader.java:24)
+	at com.shine.faas.common.util.ActionUtil.doAction(ActionUtil.java:57)
+	at com.shine.faas.domain.orm.OrmLoader.syncDatabase(OrmLoader.java:23)
+	at com.shine.faas.admin.FaasAdminServiceApplication$1.onApplicationEvent(FaasAdminServiceApplication.java:41)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:402)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:359)
+	at com.shine.faas.admin.FaasAdminServiceApplication.main(FaasAdminServiceApplication.java:50)
+2020-09-29 19:58:12,445 [main] ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'customerController' method 
+public com.shine.faas.common.information.ReturnInfo com.shine.faas.admin.controller.CustomerController.queryAdmin(com.shine.faas.admin.information.customer.QueryCustomerReqInfo)
+to {POST /customer}: There is already 'customerController' bean method
+public com.shine.faas.common.information.ReturnInfo com.shine.faas.admin.controller.CustomerController.createAdmin(com.shine.faas.admin.information.customer.CreateCustomerReqInfo) mapped.
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1778)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:849)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:877)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
+	at com.shine.faas.admin.FaasAdminServiceApplication.main(FaasAdminServiceApplication.java:26)
+Caused by: java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'customerController' method 
+public com.shine.faas.common.information.ReturnInfo com.shine.faas.admin.controller.CustomerController.queryAdmin(com.shine.faas.admin.information.customer.QueryCustomerReqInfo)
+to {POST /customer}: There is already 'customerController' bean method
+public com.shine.faas.common.information.ReturnInfo com.shine.faas.admin.controller.CustomerController.createAdmin(com.shine.faas.admin.information.customer.CreateCustomerReqInfo) mapped.
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.assertUniqueMethodMapping(AbstractHandlerMethodMapping.java:618)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:586)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:312)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.lambda$detectHandlerMethods$1(AbstractHandlerMethodMapping.java:282)
+	at java.util.LinkedHashMap.forEach(LinkedHashMap.java:684)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.detectHandlerMethods(AbstractHandlerMethodMapping.java:280)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.processCandidateBean(AbstractHandlerMethodMapping.java:252)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.initHandlerMethods(AbstractHandlerMethodMapping.java:211)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.afterPropertiesSet(AbstractHandlerMethodMapping.java:199)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.afterPropertiesSet(RequestMappingHandlerMapping.java:164)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1837)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1774)
+	... 16 common frames omitted
+2020-09-29 21:03:50,761 [main] ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'customerController' method 
+public com.shine.faas.common.information.ReturnInfo com.shine.faas.admin.controller.CustomerController.createAdmin(com.shine.faas.admin.information.customer.CreateCustomerReqInfo)
+to {POST /customer}: There is already 'customerController' bean method
+public com.shine.faas.common.information.ReturnInfo com.shine.faas.admin.controller.CustomerController.queryAdmin(com.shine.faas.admin.information.customer.QueryCustomerReqInfo) mapped.
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1778)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:849)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:877)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
+	at com.shine.faas.admin.FaasAdminServiceApplication.main(FaasAdminServiceApplication.java:26)
+Caused by: java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'customerController' method 
+public com.shine.faas.common.information.ReturnInfo com.shine.faas.admin.controller.CustomerController.createAdmin(com.shine.faas.admin.information.customer.CreateCustomerReqInfo)
+to {POST /customer}: There is already 'customerController' bean method
+public com.shine.faas.common.information.ReturnInfo com.shine.faas.admin.controller.CustomerController.queryAdmin(com.shine.faas.admin.information.customer.QueryCustomerReqInfo) mapped.
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.assertUniqueMethodMapping(AbstractHandlerMethodMapping.java:618)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:586)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:312)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.lambda$detectHandlerMethods$1(AbstractHandlerMethodMapping.java:282)
+	at java.util.LinkedHashMap.forEach(LinkedHashMap.java:684)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.detectHandlerMethods(AbstractHandlerMethodMapping.java:280)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.processCandidateBean(AbstractHandlerMethodMapping.java:252)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.initHandlerMethods(AbstractHandlerMethodMapping.java:211)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.afterPropertiesSet(AbstractHandlerMethodMapping.java:199)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.afterPropertiesSet(RequestMappingHandlerMapping.java:164)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1837)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1774)
+	... 16 common frames omitted
+2020-09-29 21:08:49,649 [main] ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'customerController' method 
+public com.shine.faas.common.information.ReturnInfo com.shine.faas.admin.controller.CustomerController.queryCustomer(com.shine.faas.admin.information.customer.QueryCustomerReqInfo)
+to {POST /customer}: There is already 'customerController' bean method
+public com.shine.faas.common.information.ReturnInfo com.shine.faas.admin.controller.CustomerController.createCustomer(com.shine.faas.admin.information.customer.CreateCustomerReqInfo) mapped.
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1778)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:849)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:877)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
+	at com.shine.faas.admin.FaasAdminServiceApplication.main(FaasAdminServiceApplication.java:26)
+Caused by: java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'customerController' method 
+public com.shine.faas.common.information.ReturnInfo com.shine.faas.admin.controller.CustomerController.queryCustomer(com.shine.faas.admin.information.customer.QueryCustomerReqInfo)
+to {POST /customer}: There is already 'customerController' bean method
+public com.shine.faas.common.information.ReturnInfo com.shine.faas.admin.controller.CustomerController.createCustomer(com.shine.faas.admin.information.customer.CreateCustomerReqInfo) mapped.
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.assertUniqueMethodMapping(AbstractHandlerMethodMapping.java:618)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:586)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:312)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.lambda$detectHandlerMethods$1(AbstractHandlerMethodMapping.java:282)
+	at java.util.LinkedHashMap.forEach(LinkedHashMap.java:684)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.detectHandlerMethods(AbstractHandlerMethodMapping.java:280)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.processCandidateBean(AbstractHandlerMethodMapping.java:252)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.initHandlerMethods(AbstractHandlerMethodMapping.java:211)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.afterPropertiesSet(AbstractHandlerMethodMapping.java:199)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.afterPropertiesSet(RequestMappingHandlerMapping.java:164)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1837)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1774)
+	... 16 common frames omitted
+2020-09-29 21:10:45,133 [main] ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'customerController' method 
+public com.shine.faas.common.information.ReturnInfo com.shine.faas.admin.controller.CustomerController.queryCustomer(com.shine.faas.admin.information.customer.QueryCustomerReqInfo)
+to {POST /customer}: There is already 'customerController' bean method
+public com.shine.faas.common.information.ReturnInfo com.shine.faas.admin.controller.CustomerController.createCustomer(com.shine.faas.admin.information.customer.CreateCustomerReqInfo) mapped.
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1778)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:849)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:877)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
+	at com.shine.faas.admin.FaasAdminServiceApplication.main(FaasAdminServiceApplication.java:26)
+Caused by: java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'customerController' method 
+public com.shine.faas.common.information.ReturnInfo com.shine.faas.admin.controller.CustomerController.queryCustomer(com.shine.faas.admin.information.customer.QueryCustomerReqInfo)
+to {POST /customer}: There is already 'customerController' bean method
+public com.shine.faas.common.information.ReturnInfo com.shine.faas.admin.controller.CustomerController.createCustomer(com.shine.faas.admin.information.customer.CreateCustomerReqInfo) mapped.
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.assertUniqueMethodMapping(AbstractHandlerMethodMapping.java:618)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:586)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:312)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.lambda$detectHandlerMethods$1(AbstractHandlerMethodMapping.java:282)
+	at java.util.LinkedHashMap.forEach(LinkedHashMap.java:684)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.detectHandlerMethods(AbstractHandlerMethodMapping.java:280)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.processCandidateBean(AbstractHandlerMethodMapping.java:252)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.initHandlerMethods(AbstractHandlerMethodMapping.java:211)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.afterPropertiesSet(AbstractHandlerMethodMapping.java:199)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.afterPropertiesSet(RequestMappingHandlerMapping.java:164)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1837)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1774)
+	... 16 common frames omitted

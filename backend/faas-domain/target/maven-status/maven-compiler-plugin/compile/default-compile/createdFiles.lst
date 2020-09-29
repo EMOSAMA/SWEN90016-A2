@@ -1,0 +1,6 @@
+com\shine\faas\domain\orm\entity\Admin.class
+com\shine\faas\domain\orm\entity\Appointment.class
+com\shine\faas\domain\orm\entity\Biller.class
+com\shine\faas\domain\orm\OrmLoader.class
+com\shine\faas\domain\orm\entity\Customer.class
+com\shine\faas\domain\orm\entity\Service.class

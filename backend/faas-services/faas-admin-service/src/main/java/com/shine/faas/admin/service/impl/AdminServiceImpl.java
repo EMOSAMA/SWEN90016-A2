@@ -1,15 +1,15 @@
 package com.shine.faas.admin.service.impl;
 
 
-import com.shine.faas.admin.information.*;
-import com.shine.faas.admin.information.admin.CreateAdminReqInfo;
-import com.shine.faas.admin.information.admin.QueryAdminReqInfo;
-import com.shine.faas.admin.information.admin.UpdateAdminReqInfo;
+import com.shine.faas.admin.information.LoginReqInfo;
+import com.shine.faas.admin.information.LoginResInfo;
+import com.shine.faas.admin.information.ModifyPwdInfo;
+import com.shine.faas.admin.information.admin.*;
 import com.shine.faas.common.DbContext;
 import com.shine.faas.common.information.ReturnInfo;
 import com.shine.faas.admin.mapper.MapFactory;
 import com.shine.faas.admin.orm.RepositoryFactory;
-import com.shine.faas.admin.service.UserService;
+import com.shine.faas.admin.service.AdminService;
 import com.shine.faas.common.orm.query.PagerResultInfo;
 import com.shine.faas.domain.orm.entity.*;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -19,7 +19,7 @@ import java.util.List;
 import java.util.UUID;
 
 @Component
-public class UserServiceImpl implements UserService {
+public class AdminServiceImpl implements AdminService {
 
     @Autowired
     private RepositoryFactory repositoryFactory;
@@ -47,32 +47,32 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public ReturnInfo changePassword(DbContext context, ModifyUserPwdInfo modifyUserPwdInfo) throws Exception {
+    public ReturnInfo changePassword(DbContext context, ModifyPwdInfo modifyPwdInfo) throws Exception {
 
-        if (modifyUserPwdInfo.getUserId() == null)
+        if (modifyPwdInfo.getUserId() == null)
             return new ReturnInfo(false, "必须指定用户");
 
-        if (modifyUserPwdInfo.getOldPassword() == null)
+        if (modifyPwdInfo.getOldPassword() == null)
             return new ReturnInfo(false, "必须传入旧密码");
 
-        if (modifyUserPwdInfo.getPassword() == null)
+        if (modifyPwdInfo.getPassword() == null)
             return new ReturnInfo(false, "密码必须非空");
 
-        if (modifyUserPwdInfo.getPassword().length() < 6)
+        if (modifyPwdInfo.getPassword().length() < 6)
             return new ReturnInfo(false, "密码长度不能小于6位");
 
-        if (modifyUserPwdInfo.getPassword().length() > 12)
+        if (modifyPwdInfo.getPassword().length() > 12)
             return new ReturnInfo(false, "密码长度不能大于12位");
 
-        Admin user = this.repositoryFactory.adminRepository.findOne(context, modifyUserPwdInfo.getUserId());
+        Admin user = this.repositoryFactory.adminRepository.findOne(context, modifyPwdInfo.getUserId());
         if (user == null || user.getRecycled())
             return new ReturnInfo(false, "用户不存在");
 
 
-        if (!user.getPassword().equals(modifyUserPwdInfo.getOldPassword()))
+        if (!user.getPassword().equals(modifyPwdInfo.getOldPassword()))
             return new ReturnInfo(false, "输入的旧密码错误");
 
-        user.setPassword(modifyUserPwdInfo.getPassword());
+        user.setPassword(modifyPwdInfo.getPassword());
         user.setUpdateTime(new Date());
         this.repositoryFactory.adminRepository.update(context, user);
 

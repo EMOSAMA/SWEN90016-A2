@@ -1,4 +1,4 @@
-package com.shine.faas.admin.information.user.admin;
+package com.shine.faas.admin.information.admin;
 
 import java.util.UUID;
 

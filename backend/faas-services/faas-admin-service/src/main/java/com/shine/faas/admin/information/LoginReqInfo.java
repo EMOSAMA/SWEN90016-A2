@@ -1,4 +1,4 @@
-package com.shine.faas.admin.information.admin;
+package com.shine.faas.admin.information;
 
 public class LoginReqInfo {
 

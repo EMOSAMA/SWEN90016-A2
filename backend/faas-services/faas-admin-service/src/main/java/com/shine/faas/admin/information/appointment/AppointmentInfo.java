@@ -1,14 +1,16 @@
-package com.shine.faas.admin.information.admin;
+package com.shine.faas.admin.information.appointment;
 
+import java.util.Date;
 import java.util.UUID;
 
-public class AdminInfo {
-    private UUID id;
-    private String username;
-    private String password;
-    private String name;
-    private String email;
-    private Boolean isSuper;
+public class AppointmentInfo {
+    UUID id;
+    UUID customer_id;
+    UUID service_id;
+    Date time;
+    String location;
+    String status;
+    String message;
 
     public UUID getId() {
         return id;
@@ -18,43 +20,51 @@ public class AdminInfo {
         this.id = id;
     }
 
-    public String getUsername() {
-        return username;
+    public UUID getCustomer_id() {
+        return customer_id;
     }
 
-    public void setUsername(String username) {
-        this.username = username;
+    public void setCustomer_id(UUID customer_id) {
+        this.customer_id = customer_id;
     }
 
-    public String getPassword() {
-        return password;
+    public UUID getService_id() {
+        return service_id;
     }
 
-    public void setPassword(String password) {
-        this.password = password;
+    public void setService_id(UUID service_id) {
+        this.service_id = service_id;
     }
 
-    public String getName() {
-        return name;
+    public Date getTime() {
+        return time;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setTime(Date time) {
+        this.time = time;
     }
 
-    public String getEmail() {
-        return email;
+    public String getLocation() {
+        return location;
     }
 
-    public void setEmail(String email) {
-        this.email = email;
+    public void setLocation(String location) {
+        this.location = location;
     }
 
-    public Boolean getSuper() {
-        return isSuper;
+    public String getStatus() {
+        return status;
     }
 
-    public void setSuper(Boolean aSuper) {
-        isSuper = aSuper;
+    public void setStatus(String status) {
+        this.status = status;
+    }
+
+    public String getMessage() {
+        return message;
+    }
+
+    public void setMessage(String message) {
+        this.message = message;
     }
 }

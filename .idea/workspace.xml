@@ -1,21 +1,716 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="568d2955-7f79-449e-991c-8aa0cf672651" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/SWEN90016-A2.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/faas-common/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/faas-common/src/main/java/com/shine/faas/common/ApplicationStartedEvent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/faas-common/src/main/java/com/shine/faas/common/DbContext.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/faas-common/src/main/java/com/shine/faas/common/ReqCustomer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/faas-common/src/main/java/com/shine/faas/common/SQLConnection.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/faas-common/src/main/java/com/shine/faas/common/information/JsonArray.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/faas-common/src/main/java/com/shine/faas/common/information/JsonObject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/faas-common/src/main/java/com/shine/faas/common/information/PairInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/faas-common/src/main/java/com/shine/faas/common/information/PrepareStatement.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/faas-common/src/main/java/com/shine/faas/common/information/ReturnInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/faas-common/src/main/java/com/shine/faas/common/orm/AbstractEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/faas-common/src/main/java/com/shine/faas/common/orm/BaseEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/faas-common/src/main/java/com/shine/faas/common/orm/CrudRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/faas-common/src/main/java/com/shine/faas/common/orm/DatabaseSync.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/faas-common/src/main/java/com/shine/faas/common/orm/FieldInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/faas-common/src/main/java/com/shine/faas/common/orm/OrmManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/faas-common/src/main/java/com/shine/faas/common/orm/ParameterMatcher.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/faas-common/src/main/java/com/shine/faas/common/orm/QueryBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/faas-common/src/main/java/com/shine/faas/common/orm/QueryHelper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/faas-common/src/main/java/com/shine/faas/common/orm/SqlParaJson.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/faas-common/src/main/java/com/shine/faas/common/orm/annotation/Column.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/faas-common/src/main/java/com/shine/faas/common/orm/annotation/Entity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/faas-common/src/main/java/com/shine/faas/common/orm/annotation/Id.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/faas-common/src/main/java/com/shine/faas/common/orm/annotation/Table.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/faas-common/src/main/java/com/shine/faas/common/orm/query/OrderBy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/faas-common/src/main/java/com/shine/faas/common/orm/query/OrmAnd.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/faas-common/src/main/java/com/shine/faas/common/orm/query/OrmCondition.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/faas-common/src/main/java/com/shine/faas/common/orm/query/OrmOpExpression.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/faas-common/src/main/java/com/shine/faas/common/orm/query/OrmOr.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/faas-common/src/main/java/com/shine/faas/common/orm/query/OrmPagerOrmQueryInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/faas-common/src/main/java/com/shine/faas/common/orm/query/OrmQueryAssitant.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/faas-common/src/main/java/com/shine/faas/common/orm/query/OrmQueryInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/faas-common/src/main/java/com/shine/faas/common/orm/query/PagerInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/faas-common/src/main/java/com/shine/faas/common/orm/query/PagerResultInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/faas-common/src/main/java/com/shine/faas/common/orm/query/QueryInternalInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/faas-common/src/main/java/com/shine/faas/common/util/ActionUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/faas-common/src/main/java/com/shine/faas/common/util/DateUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/faas-common/src/main/java/com/shine/faas/common/util/GeneraterUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/faas-common/src/main/java/com/shine/faas/common/util/IndentStringBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/faas-common/src/main/java/com/shine/faas/common/util/JsonUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/faas-common/src/main/java/com/shine/faas/common/util/SpringUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/faas-common/src/main/java/com/shine/faas/common/util/StringUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/faas-common/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/faas-common/src/main/resources/config/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/faas-domain/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/faas-domain/src/main/java/com/shine/faas/domain/orm/OrmLoader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/faas-domain/src/main/java/com/shine/faas/domain/orm/entity/Admin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/faas-service-dto/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/faas-service-dto/src/main/java/com/shine/faas/information/IdBundleInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/faas-service-dto/src/main/java/com/shine/faas/information/ReturnInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/faas-services/faas-admin-service/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/faas-services/faas-admin-service/src/main/java/com/shine/faas/admin/FaasAdminServiceApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/faas-services/faas-admin-service/src/main/java/com/shine/faas/admin/controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/faas-services/faas-admin-service/src/main/java/com/shine/faas/admin/information/LoginReqInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/faas-services/faas-admin-service/src/main/java/com/shine/faas/admin/information/LoginResInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/faas-services/faas-admin-service/src/main/java/com/shine/faas/admin/information/ModifyUserPwdInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/faas-services/faas-admin-service/src/main/java/com/shine/faas/admin/information/UserLoginReqInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/faas-services/faas-admin-service/src/main/java/com/shine/faas/admin/information/UserLoginResInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/faas-services/faas-admin-service/src/main/java/com/shine/faas/admin/information/user/admin/AdminInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/faas-services/faas-admin-service/src/main/java/com/shine/faas/admin/information/user/admin/CreateAdminReqInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/faas-services/faas-admin-service/src/main/java/com/shine/faas/admin/information/user/admin/QueryAdminReqInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/faas-services/faas-admin-service/src/main/java/com/shine/faas/admin/information/user/admin/UpdateAdminReqInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/faas-services/faas-admin-service/src/main/java/com/shine/faas/admin/information/user/student/CreateStudentReqInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/faas-services/faas-admin-service/src/main/java/com/shine/faas/admin/information/user/student/QueryStudentReqInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/faas-services/faas-admin-service/src/main/java/com/shine/faas/admin/information/user/student/QueryStudentResInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/faas-services/faas-admin-service/src/main/java/com/shine/faas/admin/information/user/student/StudentInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/faas-services/faas-admin-service/src/main/java/com/shine/faas/admin/information/user/student/StudentWithMajorName.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/faas-services/faas-admin-service/src/main/java/com/shine/faas/admin/information/user/student/UpdateStudentReqInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/faas-services/faas-admin-service/src/main/java/com/shine/faas/admin/information/user/teacher/CreateTeacherReqInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/faas-services/faas-admin-service/src/main/java/com/shine/faas/admin/information/user/teacher/QueryTeacherByAllocatedUnitReqInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/faas-services/faas-admin-service/src/main/java/com/shine/faas/admin/information/user/teacher/QueryTeacherReqInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/faas-services/faas-admin-service/src/main/java/com/shine/faas/admin/information/user/teacher/QueryTeacherResInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/faas-services/faas-admin-service/src/main/java/com/shine/faas/admin/information/user/teacher/TeacherInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/faas-services/faas-admin-service/src/main/java/com/shine/faas/admin/information/user/teacher/TeacherWithDepartment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/faas-services/faas-admin-service/src/main/java/com/shine/faas/admin/information/user/teacher/UpdateTeacherReqInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/faas-services/faas-admin-service/src/main/java/com/shine/faas/admin/mapper/AdminMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/faas-services/faas-admin-service/src/main/java/com/shine/faas/admin/orm/RepositoryFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/faas-services/faas-admin-service/src/main/java/com/shine/faas/admin/orm/repository/AdminRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/faas-services/faas-admin-service/src/main/java/com/shine/faas/admin/service/ApplyProjectService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/faas-services/faas-admin-service/src/main/java/com/shine/faas/admin/service/LibraryService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/faas-services/faas-admin-service/src/main/java/com/shine/faas/admin/service/StructureService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/faas-services/faas-admin-service/src/main/java/com/shine/faas/admin/service/UnitService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/faas-services/faas-admin-service/src/main/java/com/shine/faas/admin/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/faas-services/faas-admin-service/src/main/java/com/shine/faas/admin/service/impl/ApplyProjectServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/faas-services/faas-admin-service/src/main/java/com/shine/faas/admin/service/impl/LibraryServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/faas-services/faas-admin-service/src/main/java/com/shine/faas/admin/service/impl/StructureServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/faas-services/faas-admin-service/src/main/java/com/shine/faas/admin/service/impl/UnitServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/faas-services/faas-admin-service/src/main/java/com/shine/faas/admin/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/faas-services/faas-admin-service/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/faas-services/faas-admin-service/src/main/resources/logback.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/faas-services/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/logs/admin/error/error_Log.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/logs/admin/info/info_Log.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/package.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/package.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/pom.xml" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="testRunner" value="GRADLE" />
+    <option name="delegatedBuild" value="true" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/backend/package.bat">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/backend/faas-domain/src/main/java/com/shine/faas/domain/orm/OrmLoader.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="133">
+              <caret line="15" column="54" selection-start-line="15" selection-start-column="54" selection-end-line="15" selection-end-column="54" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/backend/faas-services/faas-admin-service/src/main/java/com/shine/faas/admin/orm/RepositoryFactory.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="133">
+              <caret line="9" column="43" selection-start-line="9" selection-start-column="43" selection-end-line="9" selection-end-column="43" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/backend/faas-services/faas-admin-service/src/main/java/com/shine/faas/admin/mapper/AdminMapper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="133">
+              <caret line="11" column="1" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/backend/faas-services/faas-admin-service/src/main/resources/application.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="304">
+              <caret line="16" column="41" selection-start-line="16" selection-start-column="41" selection-end-line="16" selection-end-column="41" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/backend/faas-domain/src/main/java/com/shine/faas/domain/orm/entity/Admin.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="304">
+              <caret line="22" column="33" selection-start-line="22" selection-start-column="33" selection-end-line="22" selection-end-column="33" />
+              <folding>
+                <element signature="e#592#593#0" expanded="true" />
+                <element signature="e#640#641#0" expanded="true" />
+                <element signature="e#680#681#0" expanded="true" />
+                <element signature="e#711#712#0" expanded="true" />
+                <element signature="e#738#739#0" expanded="true" />
+                <element signature="e#778#779#0" expanded="true" />
+                <element signature="e#810#811#0" expanded="true" />
+                <element signature="e#842#843#0" expanded="true" />
+                <element signature="e#870#871#0" expanded="true" />
+                <element signature="e#912#913#0" expanded="true" />
+                <element signature="e#946#947#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/backend/faas-services/faas-admin-service/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/backend/faas-domain/src/main/java/com/shine/faas/domain/orm/entity/Admin.java" />
+        <option value="$PROJECT_DIR$/backend/faas-domain/src/main/java/com/shine/faas/domain/orm/OrmLoader.java" />
+        <option value="$PROJECT_DIR$/backend/faas-services/faas-admin-service/src/main/java/com/shine/faas/admin/orm/RepositoryFactory.java" />
+      </list>
+    </option>
+  </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="12" />
     <option name="y" value="116" />
     <option name="width" value="2034" />
     <option name="height" value="1398" />
   </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="SWEN90016-A2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SWEN90016-A2" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SWEN90016-A2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SWEN90016-A2" type="462c0819:PsiDirectoryNode" />
+              <item name="backend" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SWEN90016-A2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SWEN90016-A2" type="462c0819:PsiDirectoryNode" />
+              <item name="backend" type="462c0819:PsiDirectoryNode" />
+              <item name="faas-domain" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SWEN90016-A2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SWEN90016-A2" type="462c0819:PsiDirectoryNode" />
+              <item name="backend" type="462c0819:PsiDirectoryNode" />
+              <item name="faas-domain" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SWEN90016-A2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SWEN90016-A2" type="462c0819:PsiDirectoryNode" />
+              <item name="backend" type="462c0819:PsiDirectoryNode" />
+              <item name="faas-domain" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SWEN90016-A2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SWEN90016-A2" type="462c0819:PsiDirectoryNode" />
+              <item name="backend" type="462c0819:PsiDirectoryNode" />
+              <item name="faas-domain" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SWEN90016-A2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SWEN90016-A2" type="462c0819:PsiDirectoryNode" />
+              <item name="backend" type="462c0819:PsiDirectoryNode" />
+              <item name="faas-domain" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SWEN90016-A2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SWEN90016-A2" type="462c0819:PsiDirectoryNode" />
+              <item name="backend" type="462c0819:PsiDirectoryNode" />
+              <item name="faas-domain" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="shine" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SWEN90016-A2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SWEN90016-A2" type="462c0819:PsiDirectoryNode" />
+              <item name="backend" type="462c0819:PsiDirectoryNode" />
+              <item name="faas-domain" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="shine" type="462c0819:PsiDirectoryNode" />
+              <item name="faas" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SWEN90016-A2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SWEN90016-A2" type="462c0819:PsiDirectoryNode" />
+              <item name="backend" type="462c0819:PsiDirectoryNode" />
+              <item name="faas-domain" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="shine" type="462c0819:PsiDirectoryNode" />
+              <item name="faas" type="462c0819:PsiDirectoryNode" />
+              <item name="domain" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SWEN90016-A2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SWEN90016-A2" type="462c0819:PsiDirectoryNode" />
+              <item name="backend" type="462c0819:PsiDirectoryNode" />
+              <item name="faas-domain" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="shine" type="462c0819:PsiDirectoryNode" />
+              <item name="faas" type="462c0819:PsiDirectoryNode" />
+              <item name="domain" type="462c0819:PsiDirectoryNode" />
+              <item name="orm" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SWEN90016-A2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SWEN90016-A2" type="462c0819:PsiDirectoryNode" />
+              <item name="backend" type="462c0819:PsiDirectoryNode" />
+              <item name="faas-domain" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="shine" type="462c0819:PsiDirectoryNode" />
+              <item name="faas" type="462c0819:PsiDirectoryNode" />
+              <item name="domain" type="462c0819:PsiDirectoryNode" />
+              <item name="orm" type="462c0819:PsiDirectoryNode" />
+              <item name="entity" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SWEN90016-A2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SWEN90016-A2" type="462c0819:PsiDirectoryNode" />
+              <item name="backend" type="462c0819:PsiDirectoryNode" />
+              <item name="faas-services" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SWEN90016-A2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SWEN90016-A2" type="462c0819:PsiDirectoryNode" />
+              <item name="backend" type="462c0819:PsiDirectoryNode" />
+              <item name="faas-services" type="462c0819:PsiDirectoryNode" />
+              <item name="faas-admin-service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SWEN90016-A2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SWEN90016-A2" type="462c0819:PsiDirectoryNode" />
+              <item name="backend" type="462c0819:PsiDirectoryNode" />
+              <item name="faas-services" type="462c0819:PsiDirectoryNode" />
+              <item name="faas-admin-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SWEN90016-A2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SWEN90016-A2" type="462c0819:PsiDirectoryNode" />
+              <item name="backend" type="462c0819:PsiDirectoryNode" />
+              <item name="faas-services" type="462c0819:PsiDirectoryNode" />
+              <item name="faas-admin-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SWEN90016-A2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SWEN90016-A2" type="462c0819:PsiDirectoryNode" />
+              <item name="backend" type="462c0819:PsiDirectoryNode" />
+              <item name="faas-services" type="462c0819:PsiDirectoryNode" />
+              <item name="faas-admin-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SWEN90016-A2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SWEN90016-A2" type="462c0819:PsiDirectoryNode" />
+              <item name="backend" type="462c0819:PsiDirectoryNode" />
+              <item name="faas-services" type="462c0819:PsiDirectoryNode" />
+              <item name="faas-admin-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SWEN90016-A2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SWEN90016-A2" type="462c0819:PsiDirectoryNode" />
+              <item name="backend" type="462c0819:PsiDirectoryNode" />
+              <item name="faas-services" type="462c0819:PsiDirectoryNode" />
+              <item name="faas-admin-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="shine" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SWEN90016-A2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SWEN90016-A2" type="462c0819:PsiDirectoryNode" />
+              <item name="backend" type="462c0819:PsiDirectoryNode" />
+              <item name="faas-services" type="462c0819:PsiDirectoryNode" />
+              <item name="faas-admin-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="shine" type="462c0819:PsiDirectoryNode" />
+              <item name="faas" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SWEN90016-A2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SWEN90016-A2" type="462c0819:PsiDirectoryNode" />
+              <item name="backend" type="462c0819:PsiDirectoryNode" />
+              <item name="faas-services" type="462c0819:PsiDirectoryNode" />
+              <item name="faas-admin-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="shine" type="462c0819:PsiDirectoryNode" />
+              <item name="faas" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SWEN90016-A2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SWEN90016-A2" type="462c0819:PsiDirectoryNode" />
+              <item name="backend" type="462c0819:PsiDirectoryNode" />
+              <item name="faas-services" type="462c0819:PsiDirectoryNode" />
+              <item name="faas-admin-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="shine" type="462c0819:PsiDirectoryNode" />
+              <item name="faas" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SWEN90016-A2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SWEN90016-A2" type="462c0819:PsiDirectoryNode" />
+              <item name="backend" type="462c0819:PsiDirectoryNode" />
+              <item name="faas-services" type="462c0819:PsiDirectoryNode" />
+              <item name="faas-admin-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="shine" type="462c0819:PsiDirectoryNode" />
+              <item name="faas" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+              <item name="information" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SWEN90016-A2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SWEN90016-A2" type="462c0819:PsiDirectoryNode" />
+              <item name="backend" type="462c0819:PsiDirectoryNode" />
+              <item name="faas-services" type="462c0819:PsiDirectoryNode" />
+              <item name="faas-admin-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="shine" type="462c0819:PsiDirectoryNode" />
+              <item name="faas" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+              <item name="information" type="462c0819:PsiDirectoryNode" />
+              <item name="user" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SWEN90016-A2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SWEN90016-A2" type="462c0819:PsiDirectoryNode" />
+              <item name="backend" type="462c0819:PsiDirectoryNode" />
+              <item name="faas-services" type="462c0819:PsiDirectoryNode" />
+              <item name="faas-admin-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="shine" type="462c0819:PsiDirectoryNode" />
+              <item name="faas" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+              <item name="information" type="462c0819:PsiDirectoryNode" />
+              <item name="user" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SWEN90016-A2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SWEN90016-A2" type="462c0819:PsiDirectoryNode" />
+              <item name="backend" type="462c0819:PsiDirectoryNode" />
+              <item name="faas-services" type="462c0819:PsiDirectoryNode" />
+              <item name="faas-admin-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="shine" type="462c0819:PsiDirectoryNode" />
+              <item name="faas" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+              <item name="mapper" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/backend" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="568d2955-7f79-449e-991c-8aa0cf672651" name="Default Changelist" comment="" />
+      <created>1601306100491</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1601306100491</updated>
+      <workItem from="1601306101788" duration="1401000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="1401000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-6" y="-6" width="1381" height="885" extended-state="6" />
+    <layout>
+      <window_info id="Image Layers" />
+      <window_info id="Designer" />
+      <window_info id="UI Designer" />
+      <window_info id="Capture Tool" />
+      <window_info id="Favorites" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2494331" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Palette" />
+      <window_info anchor="right" id="Theme Preview" />
+      <window_info anchor="right" id="Maven" />
+      <window_info anchor="right" id="Capture Analysis" />
+      <window_info anchor="right" id="Palette&#9;" />
+      <window_info anchor="right" id="Database" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/backend/package.bat">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/faas-services/faas-admin-service/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="16" column="41" selection-start-line="16" selection-start-column="41" selection-end-line="16" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/faas-domain/src/main/java/com/shine/faas/domain/orm/entity/Admin.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="22" column="33" selection-start-line="22" selection-start-column="33" selection-end-line="22" selection-end-column="33" />
+          <folding>
+            <element signature="e#592#593#0" expanded="true" />
+            <element signature="e#640#641#0" expanded="true" />
+            <element signature="e#680#681#0" expanded="true" />
+            <element signature="e#711#712#0" expanded="true" />
+            <element signature="e#738#739#0" expanded="true" />
+            <element signature="e#778#779#0" expanded="true" />
+            <element signature="e#810#811#0" expanded="true" />
+            <element signature="e#842#843#0" expanded="true" />
+            <element signature="e#870#871#0" expanded="true" />
+            <element signature="e#912#913#0" expanded="true" />
+            <element signature="e#946#947#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/faas-domain/src/main/java/com/shine/faas/domain/orm/OrmLoader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="15" column="54" selection-start-line="15" selection-start-column="54" selection-end-line="15" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/faas-services/faas-admin-service/src/main/java/com/shine/faas/admin/orm/RepositoryFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="9" column="43" selection-start-line="9" selection-start-column="43" selection-end-line="9" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/faas-services/faas-admin-service/src/main/java/com/shine/faas/admin/information/ModifyUserPwdInfo.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/faas-services/faas-admin-service/src/main/java/com/shine/faas/admin/controller/LibraryController.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/faas-services/faas-admin-service/src/main/java/com/shine/faas/admin/controller/UnitController.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/faas-services/faas-admin-service/src/main/java/com/shine/faas/admin/controller/StructureController.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/faas-services/faas-admin-service/src/main/java/com/shine/faas/admin/mapper/AdminMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="11" column="1" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
   </component>
   <component name="masterDetails">
     <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
       <state key="ProjectJDKs.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
         <settings>
           <splitter-proportions>
             <option name="proportions">

@@ -4,7 +4,7 @@ import com.shine.faas.common.orm.query.PagerInfo;
 
 import java.util.UUID;
 
-public class QueryBillerInfo extends PagerInfo {
+public class QueryBillerReqInfo extends PagerInfo {
     public UUID customerId;
 
     public UUID getCustomerId() {

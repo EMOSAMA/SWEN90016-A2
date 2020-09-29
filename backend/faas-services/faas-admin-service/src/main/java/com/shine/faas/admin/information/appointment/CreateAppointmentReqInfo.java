@@ -1,4 +1,4 @@
 package com.shine.faas.admin.information.appointment;
 
-public class CreateAppointmentInfo extends AppointmentInfo{
+public class CreateAppointmentReqInfo extends AppointmentInfo{
 }
