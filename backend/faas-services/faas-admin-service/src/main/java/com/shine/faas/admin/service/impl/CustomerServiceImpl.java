@@ -40,12 +40,12 @@ public class CustomerServiceImpl implements CustomerService {
             return new ReturnInfo(false, "密码不能为空");
         }
 
-        Admin adminUser = repositoryFactory.adminRepository.getAuthorizeUser(context, loginReqInfo.getUserName(), loginReqInfo.getPassword());
-        if (adminUser == null || adminUser.getRecycled())
+        Customer customerUser = repositoryFactory.customerRepository.getAuthorizeUser(context, loginReqInfo.getUserName(), loginReqInfo.getPassword());
+        if (customerUser == null || customerUser.getRecycled())
             return new ReturnInfo(false, "用户名或者密码出错");
 
         LoginResInfo resInfo = new LoginResInfo();
-        resInfo.setUserId(adminUser.getId());
+        resInfo.setUserId(customerUser.getId());
         return new ReturnInfo(resInfo);
     }
 

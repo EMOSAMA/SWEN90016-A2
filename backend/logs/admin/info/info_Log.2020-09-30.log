@@ -1,0 +1,597 @@
+2020-09-30 01:08:09.644 [Thread-6] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-09-30 01:08:09.648 [Thread-6] INFO  com.zaxxer.hikari.HikariDataSource - MyHikariCP - Shutdown initiated...
+2020-09-30 01:08:09.650 [Thread-6] INFO  com.zaxxer.hikari.HikariDataSource - MyHikariCP - Shutdown completed.
+2020-09-30 01:09:38.255 [main] INFO  com.shine.faas.admin.FaasAdminServiceApplication - Starting FaasAdminServiceApplication on wanc-desktop with PID 1360 (started by Administrator in C:\Users\Administrator\OneDrive - The University of Melbourne\SWEN90016-SPM\Assignment2\SWEN90016-A2\backend)
+2020-09-30 01:09:38.259 [main] INFO  com.shine.faas.admin.FaasAdminServiceApplication - No active profile set, falling back to default profiles: default
+2020-09-30 01:09:38.945 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$af95898c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-30 01:09:39.150 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 7000 (http)
+2020-09-30 01:09:39.160 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-7000"]
+2020-09-30 01:09:39.167 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-09-30 01:09:39.167 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.17]
+2020-09-30 01:09:39.242 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-09-30 01:09:39.242 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 953 ms
+2020-09-30 01:09:39.485 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-30 01:09:39.629 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-7000"]
+2020-09-30 01:09:39.646 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 7000 (http) with context path ''
+2020-09-30 01:09:39.648 [main] INFO  com.shine.faas.admin.FaasAdminServiceApplication - Started FaasAdminServiceApplication in 1.643 seconds (JVM running for 2.249)
+2020-09-30 01:09:39.650 [main] INFO  com.shine.faas.admin.FaasAdminServiceApplication - 启动完成...
+2020-09-30 01:09:39.666 [main] INFO  com.zaxxer.hikari.HikariDataSource - MyHikariCP - Starting...
+2020-09-30 01:09:43.315 [main] INFO  com.zaxxer.hikari.HikariDataSource - MyHikariCP - Start completed.
+2020-09-30 01:10:00.336 [http-nio-7000-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-09-30 01:10:00.336 [http-nio-7000-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-09-30 01:10:00.340 [http-nio-7000-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 4 ms
+2020-09-30 01:11:00.490 [main] INFO  com.shine.faas.admin.FaasAdminServiceApplication - Starting FaasAdminServiceApplication on wanc-desktop with PID 18168 (started by Administrator in C:\Users\Administrator\OneDrive - The University of Melbourne\SWEN90016-SPM\Assignment2\SWEN90016-A2\backend)
+2020-09-30 01:11:00.493 [main] INFO  com.shine.faas.admin.FaasAdminServiceApplication - No active profile set, falling back to default profiles: default
+2020-09-30 01:11:01.251 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$5149c32d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-30 01:11:01.496 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 7000 (http)
+2020-09-30 01:11:01.507 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-7000"]
+2020-09-30 01:11:01.513 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-09-30 01:11:01.513 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.17]
+2020-09-30 01:11:01.594 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-09-30 01:11:01.594 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1070 ms
+2020-09-30 01:11:01.851 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-30 01:11:02.091 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-7000"]
+2020-09-30 01:11:02.118 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 7000 (http) with context path ''
+2020-09-30 01:11:02.121 [main] INFO  com.shine.faas.admin.FaasAdminServiceApplication - Started FaasAdminServiceApplication in 1.912 seconds (JVM running for 2.659)
+2020-09-30 01:11:02.124 [main] INFO  com.shine.faas.admin.FaasAdminServiceApplication - 启动完成...
+2020-09-30 01:11:02.127 [main] INFO  com.zaxxer.hikari.HikariDataSource - MyHikariCP - Starting...
+2020-09-30 01:11:18.520 [main] INFO  com.zaxxer.hikari.HikariDataSource - MyHikariCP - Start completed.
+2020-09-30 01:11:30.609 [http-nio-7000-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-09-30 01:11:30.609 [http-nio-7000-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-09-30 01:11:30.613 [http-nio-7000-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 4 ms
+2020-09-30 01:25:41.430 [Thread-6] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-09-30 01:25:41.430 [Thread-6] INFO  com.zaxxer.hikari.HikariDataSource - MyHikariCP - Shutdown initiated...
+2020-09-30 01:25:41.432 [Thread-6] INFO  com.zaxxer.hikari.HikariDataSource - MyHikariCP - Shutdown completed.
+2020-09-30 01:25:45.053 [main] INFO  com.shine.faas.admin.FaasAdminServiceApplication - Starting FaasAdminServiceApplication on wanc-desktop with PID 12264 (started by Administrator in C:\Users\Administrator\OneDrive - The University of Melbourne\SWEN90016-SPM\Assignment2\SWEN90016-A2\backend)
+2020-09-30 01:25:45.056 [main] INFO  com.shine.faas.admin.FaasAdminServiceApplication - No active profile set, falling back to default profiles: default
+2020-09-30 01:25:45.680 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$d64197d4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-30 01:25:45.879 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 7000 (http)
+2020-09-30 01:25:45.890 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-7000"]
+2020-09-30 01:25:45.896 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-09-30 01:25:45.896 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.17]
+2020-09-30 01:25:45.974 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-09-30 01:25:45.974 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 886 ms
+2020-09-30 01:25:46.209 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-30 01:25:46.349 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-7000"]
+2020-09-30 01:25:46.365 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 7000 (http) with context path ''
+2020-09-30 01:25:46.368 [main] INFO  com.shine.faas.admin.FaasAdminServiceApplication - Started FaasAdminServiceApplication in 1.574 seconds (JVM running for 2.163)
+2020-09-30 01:25:46.370 [main] INFO  com.shine.faas.admin.FaasAdminServiceApplication - 启动完成...
+2020-09-30 01:25:46.373 [main] INFO  com.zaxxer.hikari.HikariDataSource - MyHikariCP - Starting...
+2020-09-30 01:25:59.998 [main] INFO  com.zaxxer.hikari.HikariDataSource - MyHikariCP - Start completed.
+2020-09-30 01:26:10.764 [http-nio-7000-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-09-30 01:26:10.765 [http-nio-7000-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-09-30 01:26:10.769 [http-nio-7000-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 4 ms
+2020-09-30 01:27:53.469 [main] INFO  com.shine.faas.admin.FaasAdminServiceApplication - Starting FaasAdminServiceApplication on wanc-desktop with PID 5264 (started by Administrator in C:\Users\Administrator\OneDrive - The University of Melbourne\SWEN90016-SPM\Assignment2\SWEN90016-A2\backend)
+2020-09-30 01:27:53.471 [main] INFO  com.shine.faas.admin.FaasAdminServiceApplication - No active profile set, falling back to default profiles: default
+2020-09-30 01:27:54.101 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$de1588d7] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-30 01:27:54.304 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 7000 (http)
+2020-09-30 01:27:54.314 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-7000"]
+2020-09-30 01:27:54.321 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-09-30 01:27:54.322 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.17]
+2020-09-30 01:27:54.393 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-09-30 01:27:54.393 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 896 ms
+2020-09-30 01:27:54.615 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-30 01:27:54.748 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-7000"]
+2020-09-30 01:27:54.764 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 7000 (http) with context path ''
+2020-09-30 01:27:54.766 [main] INFO  com.shine.faas.admin.FaasAdminServiceApplication - Started FaasAdminServiceApplication in 1.547 seconds (JVM running for 2.146)
+2020-09-30 01:27:54.769 [main] INFO  com.shine.faas.admin.FaasAdminServiceApplication - 启动完成...
+2020-09-30 01:27:54.772 [main] INFO  com.zaxxer.hikari.HikariDataSource - MyHikariCP - Starting...
+2020-09-30 01:28:00.915 [main] INFO  com.zaxxer.hikari.HikariDataSource - MyHikariCP - Start completed.
+2020-09-30 01:28:14.292 [http-nio-7000-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-09-30 01:28:14.292 [http-nio-7000-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-09-30 01:28:14.297 [http-nio-7000-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 5 ms
+2020-09-30 01:29:15.702 [main] INFO  com.shine.faas.admin.FaasAdminServiceApplication - Starting FaasAdminServiceApplication on wanc-desktop with PID 2092 (started by Administrator in C:\Users\Administrator\OneDrive - The University of Melbourne\SWEN90016-SPM\Assignment2\SWEN90016-A2\backend)
+2020-09-30 01:29:15.704 [main] INFO  com.shine.faas.admin.FaasAdminServiceApplication - No active profile set, falling back to default profiles: default
+2020-09-30 01:29:16.411 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$4c55e234] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-30 01:29:16.651 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 7000 (http)
+2020-09-30 01:29:16.661 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-7000"]
+2020-09-30 01:29:16.667 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-09-30 01:29:16.667 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.17]
+2020-09-30 01:29:16.744 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-09-30 01:29:16.744 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1009 ms
+2020-09-30 01:29:17.007 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-30 01:29:17.192 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-7000"]
+2020-09-30 01:29:17.251 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 7000 (http) with context path ''
+2020-09-30 01:29:17.254 [main] INFO  com.shine.faas.admin.FaasAdminServiceApplication - Started FaasAdminServiceApplication in 1.825 seconds (JVM running for 2.547)
+2020-09-30 01:29:17.256 [main] INFO  com.shine.faas.admin.FaasAdminServiceApplication - 启动完成...
+2020-09-30 01:29:17.260 [main] INFO  com.zaxxer.hikari.HikariDataSource - MyHikariCP - Starting...
+2020-09-30 01:29:20.739 [main] INFO  com.zaxxer.hikari.HikariDataSource - MyHikariCP - Start completed.
+2020-09-30 01:30:02.819 [http-nio-7000-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-09-30 01:30:02.819 [http-nio-7000-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-09-30 01:30:02.824 [http-nio-7000-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 5 ms
+2020-09-30 01:34:21.403 [MyHikariCP housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - MyHikariCP - Thread starvation or clock leap detected (housekeeper delta=1m552ms844µs500ns).
+2020-09-30 01:37:01.578 [MyHikariCP housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - MyHikariCP - Thread starvation or clock leap detected (housekeeper delta=2m40s174ms738µs600ns).
+2020-09-30 01:37:01.602 [Thread-6] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-09-30 01:37:01.602 [Thread-6] INFO  com.zaxxer.hikari.HikariDataSource - MyHikariCP - Shutdown initiated...
+2020-09-30 01:37:01.836 [Thread-6] INFO  com.zaxxer.hikari.HikariDataSource - MyHikariCP - Shutdown completed.
+2020-09-30 01:37:01.841 [http-nio-7000-exec-2] WARN  com.zaxxer.hikari.pool.ProxyConnection - MyHikariCP - Connection org.postgresql.jdbc.PgConnection@20463060 marked as broken because of SQLSTATE(08006), ErrorCode(0)
+org.postgresql.util.PSQLException: An I/O error occurred while sending to the backend.
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:335)
+	at org.postgresql.jdbc.PgConnection.executeTransactionCommand(PgConnection.java:755)
+	at org.postgresql.jdbc.PgConnection.commit(PgConnection.java:777)
+	at com.zaxxer.hikari.pool.ProxyConnection.commit(ProxyConnection.java:361)
+	at com.zaxxer.hikari.pool.HikariProxyConnection.commit(HikariProxyConnection.java)
+	at com.shine.faas.common.SQLConnection.commit(SQLConnection.java:99)
+	at com.shine.faas.common.util.ActionUtil.doAction(ActionUtil.java:60)
+	at com.shine.faas.admin.controller.ServiceController.queryService(ServiceController.java:90)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:189)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:892)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1038)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:908)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:200)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:834)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1415)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.net.SocketException: Socket closed
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
+	at java.net.SocketInputStream.read(SocketInputStream.java:170)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at org.postgresql.core.VisibleBufferedInputStream.readMore(VisibleBufferedInputStream.java:140)
+	at org.postgresql.core.VisibleBufferedInputStream.ensureBytes(VisibleBufferedInputStream.java:109)
+	at org.postgresql.core.VisibleBufferedInputStream.read(VisibleBufferedInputStream.java:67)
+	at org.postgresql.core.PGStream.receiveChar(PGStream.java:306)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:1952)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:308)
+	... 61 common frames omitted
+2020-09-30 01:37:01.841 [http-nio-7000-exec-3] WARN  com.zaxxer.hikari.pool.ProxyConnection - MyHikariCP - Connection org.postgresql.jdbc.PgConnection@493e5320 marked as broken because of SQLSTATE(08006), ErrorCode(0)
+org.postgresql.util.PSQLException: An I/O error occurred while sending to the backend.
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:335)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:441)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:365)
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:143)
+	at org.postgresql.jdbc.PgPreparedStatement.executeQuery(PgPreparedStatement.java:106)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeQuery(ProxyPreparedStatement.java:52)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeQuery(HikariProxyPreparedStatement.java)
+	at org.springframework.jdbc.core.JdbcTemplate$1.doInPreparedStatement(JdbcTemplate.java:677)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:616)
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:668)
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:693)
+	at org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate.queryForRowSet(NamedParameterJdbcTemplate.java:307)
+	at org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate.queryForRowSet(NamedParameterJdbcTemplate.java:315)
+	at com.shine.faas.common.SQLConnection.queryWithParams(SQLConnection.java:72)
+	at com.shine.faas.common.orm.query.OrmQueryAssitant.queryPager(OrmQueryAssitant.java:106)
+	at com.shine.faas.admin.orm.repository.ServiceRepository.queryService(ServiceRepository.java:27)
+	at com.shine.faas.admin.service.impl.ServiceServiceImpl.queryService(ServiceServiceImpl.java:69)
+	at com.shine.faas.admin.controller.ServiceController.lambda$queryService$9(ServiceController.java:91)
+	at com.shine.faas.common.util.ActionUtil.doAction(ActionUtil.java:57)
+	at com.shine.faas.admin.controller.ServiceController.queryService(ServiceController.java:90)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:189)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:892)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1038)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:908)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:200)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:834)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1415)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.net.SocketException: Socket closed
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
+	at java.net.SocketInputStream.read(SocketInputStream.java:170)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at org.postgresql.core.VisibleBufferedInputStream.readMore(VisibleBufferedInputStream.java:140)
+	at org.postgresql.core.VisibleBufferedInputStream.ensureBytes(VisibleBufferedInputStream.java:109)
+	at org.postgresql.core.VisibleBufferedInputStream.read(VisibleBufferedInputStream.java:67)
+	at org.postgresql.core.PGStream.receiveChar(PGStream.java:306)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:1952)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:308)
+	... 73 common frames omitted
+2020-09-30 01:37:01.880 [http-nio-7000-exec-3] WARN  o.s.jdbc.support.SQLErrorCodesFactory - Error while extracting database name - falling back to empty error codes
+org.springframework.jdbc.support.MetaDataAccessException: Error while extracting DatabaseMetaData; nested exception is java.sql.SQLException: Connection is closed
+	at org.springframework.jdbc.support.JdbcUtils.extractDatabaseMetaData(JdbcUtils.java:331)
+	at org.springframework.jdbc.support.JdbcUtils.extractDatabaseMetaData(JdbcUtils.java:356)
+	at org.springframework.jdbc.support.SQLErrorCodesFactory.getErrorCodes(SQLErrorCodesFactory.java:214)
+	at org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator.setDataSource(SQLErrorCodeSQLExceptionTranslator.java:136)
+	at org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator.<init>(SQLErrorCodeSQLExceptionTranslator.java:99)
+	at org.springframework.jdbc.support.JdbcAccessor.getExceptionTranslator(JdbcAccessor.java:122)
+	at org.springframework.jdbc.core.JdbcTemplate.translateException(JdbcTemplate.java:1442)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:632)
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:668)
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:693)
+	at org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate.queryForRowSet(NamedParameterJdbcTemplate.java:307)
+	at org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate.queryForRowSet(NamedParameterJdbcTemplate.java:315)
+	at com.shine.faas.common.SQLConnection.queryWithParams(SQLConnection.java:72)
+	at com.shine.faas.common.orm.query.OrmQueryAssitant.queryPager(OrmQueryAssitant.java:106)
+	at com.shine.faas.admin.orm.repository.ServiceRepository.queryService(ServiceRepository.java:27)
+	at com.shine.faas.admin.service.impl.ServiceServiceImpl.queryService(ServiceServiceImpl.java:69)
+	at com.shine.faas.admin.controller.ServiceController.lambda$queryService$9(ServiceController.java:91)
+	at com.shine.faas.common.util.ActionUtil.doAction(ActionUtil.java:57)
+	at com.shine.faas.admin.controller.ServiceController.queryService(ServiceController.java:90)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:189)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:892)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1038)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:908)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:200)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:834)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1415)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.sql.SQLException: Connection is closed
+	at com.zaxxer.hikari.pool.ProxyConnection$ClosedConnection.lambda$getClosedConnection$0(ProxyConnection.java:489)
+	at com.sun.proxy.$Proxy72.getMetaData(Unknown Source)
+	at com.zaxxer.hikari.pool.ProxyConnection.getMetaData(ProxyConnection.java:354)
+	at com.zaxxer.hikari.pool.HikariProxyConnection.getMetaData(HikariProxyConnection.java)
+	at org.springframework.jdbc.support.JdbcUtils.extractDatabaseMetaData(JdbcUtils.java:320)
+	... 72 common frames omitted
+2020-09-30 01:37:05.454 [main] INFO  com.shine.faas.admin.FaasAdminServiceApplication - Starting FaasAdminServiceApplication on wanc-desktop with PID 8780 (started by Administrator in C:\Users\Administrator\OneDrive - The University of Melbourne\SWEN90016-SPM\Assignment2\SWEN90016-A2\backend)
+2020-09-30 01:37:05.457 [main] INFO  com.shine.faas.admin.FaasAdminServiceApplication - No active profile set, falling back to default profiles: default
+2020-09-30 01:37:06.097 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$1c53821c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-30 01:37:06.295 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 7000 (http)
+2020-09-30 01:37:06.306 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-7000"]
+2020-09-30 01:37:06.311 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-09-30 01:37:06.312 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.17]
+2020-09-30 01:37:06.397 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-09-30 01:37:06.397 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 896 ms
+2020-09-30 01:37:06.631 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-30 01:37:06.773 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-7000"]
+2020-09-30 01:37:06.790 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 7000 (http) with context path ''
+2020-09-30 01:37:06.792 [main] INFO  com.shine.faas.admin.FaasAdminServiceApplication - Started FaasAdminServiceApplication in 1.601 seconds (JVM running for 2.215)
+2020-09-30 01:37:06.795 [main] INFO  com.shine.faas.admin.FaasAdminServiceApplication - 启动完成...
+2020-09-30 01:37:06.798 [main] INFO  com.zaxxer.hikari.HikariDataSource - MyHikariCP - Starting...
+2020-09-30 01:37:10.904 [main] INFO  com.zaxxer.hikari.HikariDataSource - MyHikariCP - Start completed.
+2020-09-30 01:39:59.636 [http-nio-7000-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-09-30 01:39:59.636 [http-nio-7000-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-09-30 01:39:59.640 [http-nio-7000-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 4 ms
+2020-09-30 01:43:36.928 [main] INFO  com.shine.faas.admin.FaasAdminServiceApplication - Starting FaasAdminServiceApplication on wanc-desktop with PID 12740 (started by Administrator in C:\Users\Administrator\OneDrive - The University of Melbourne\SWEN90016-SPM\Assignment2\SWEN90016-A2\backend)
+2020-09-30 01:43:36.931 [main] INFO  com.shine.faas.admin.FaasAdminServiceApplication - No active profile set, falling back to default profiles: default
+2020-09-30 01:43:37.563 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$4f79a9ad] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-30 01:43:37.768 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 7000 (http)
+2020-09-30 01:43:37.778 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-7000"]
+2020-09-30 01:43:37.783 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-09-30 01:43:37.783 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.17]
+2020-09-30 01:43:37.857 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-09-30 01:43:37.857 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 896 ms
+2020-09-30 01:43:38.094 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-30 01:43:38.233 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-7000"]
+2020-09-30 01:43:38.250 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 7000 (http) with context path ''
+2020-09-30 01:43:38.252 [main] INFO  com.shine.faas.admin.FaasAdminServiceApplication - Started FaasAdminServiceApplication in 1.59 seconds (JVM running for 2.213)
+2020-09-30 01:43:38.256 [main] INFO  com.shine.faas.admin.FaasAdminServiceApplication - 启动完成...
+2020-09-30 01:43:38.259 [main] INFO  com.zaxxer.hikari.HikariDataSource - MyHikariCP - Starting...
+2020-09-30 01:43:43.806 [main] INFO  com.zaxxer.hikari.HikariDataSource - MyHikariCP - Start completed.
+2020-09-30 01:43:56.084 [http-nio-7000-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-09-30 01:43:56.084 [http-nio-7000-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-09-30 01:43:56.088 [http-nio-7000-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 4 ms
+2020-09-30 01:47:03.762 [main] INFO  com.shine.faas.admin.FaasAdminServiceApplication - Starting FaasAdminServiceApplication on wanc-desktop with PID 428 (started by Administrator in C:\Users\Administrator\OneDrive - The University of Melbourne\SWEN90016-SPM\Assignment2\SWEN90016-A2\backend)
+2020-09-30 01:47:03.765 [main] INFO  com.shine.faas.admin.FaasAdminServiceApplication - No active profile set, falling back to default profiles: default
+2020-09-30 01:47:04.427 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$de1588d7] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-30 01:47:04.627 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 7000 (http)
+2020-09-30 01:47:04.638 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-7000"]
+2020-09-30 01:47:04.644 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-09-30 01:47:04.644 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.17]
+2020-09-30 01:47:04.725 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-09-30 01:47:04.726 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 930 ms
+2020-09-30 01:47:04.964 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-30 01:47:05.111 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-7000"]
+2020-09-30 01:47:05.141 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 7000 (http) with context path ''
+2020-09-30 01:47:05.143 [main] INFO  com.shine.faas.admin.FaasAdminServiceApplication - Started FaasAdminServiceApplication in 1.646 seconds (JVM running for 2.261)
+2020-09-30 01:47:05.145 [main] INFO  com.shine.faas.admin.FaasAdminServiceApplication - 启动完成...
+2020-09-30 01:47:05.148 [main] INFO  com.zaxxer.hikari.HikariDataSource - MyHikariCP - Starting...
+2020-09-30 01:47:10.802 [main] INFO  com.zaxxer.hikari.HikariDataSource - MyHikariCP - Start completed.
+2020-09-30 01:47:31.482 [http-nio-7000-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-09-30 01:47:31.482 [http-nio-7000-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-09-30 01:47:31.487 [http-nio-7000-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 5 ms
+2020-09-30 02:16:26.800 [main] INFO  com.shine.faas.admin.FaasAdminServiceApplication - Starting FaasAdminServiceApplication on wanc-desktop with PID 2996 (started by Administrator in C:\Users\Administrator\OneDrive - The University of Melbourne\SWEN90016-SPM\Assignment2\SWEN90016-A2\backend)
+2020-09-30 02:16:26.804 [main] INFO  com.shine.faas.admin.FaasAdminServiceApplication - No active profile set, falling back to default profiles: default
+2020-09-30 02:16:27.487 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$c63cf3c9] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-30 02:16:27.689 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 7000 (http)
+2020-09-30 02:16:27.700 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-7000"]
+2020-09-30 02:16:27.707 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-09-30 02:16:27.707 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.17]
+2020-09-30 02:16:27.789 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-09-30 02:16:27.790 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 951 ms
+2020-09-30 02:16:28.049 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-30 02:16:28.215 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-7000"]
+2020-09-30 02:16:28.233 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 7000 (http) with context path ''
+2020-09-30 02:16:28.235 [main] INFO  com.shine.faas.admin.FaasAdminServiceApplication - Started FaasAdminServiceApplication in 1.713 seconds (JVM running for 2.314)
+2020-09-30 02:16:28.237 [main] INFO  com.shine.faas.admin.FaasAdminServiceApplication - 启动完成...
+2020-09-30 02:16:28.241 [main] INFO  com.zaxxer.hikari.HikariDataSource - MyHikariCP - Starting...
+2020-09-30 02:16:31.126 [main] INFO  com.zaxxer.hikari.HikariDataSource - MyHikariCP - Start completed.
+2020-09-30 02:16:42.906 [http-nio-7000-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-09-30 02:16:42.906 [http-nio-7000-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-09-30 02:16:42.910 [http-nio-7000-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 4 ms
+2020-09-30 02:21:22.769 [main] INFO  com.shine.faas.admin.FaasAdminServiceApplication - Starting FaasAdminServiceApplication on wanc-desktop with PID 19852 (started by Administrator in C:\Users\Administrator\OneDrive - The University of Melbourne\SWEN90016-SPM\Assignment2\SWEN90016-A2\backend)
+2020-09-30 02:21:22.771 [main] INFO  com.shine.faas.admin.FaasAdminServiceApplication - No active profile set, falling back to default profiles: default
+2020-09-30 02:21:23.428 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$2b7f1218] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-30 02:21:23.628 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 7000 (http)
+2020-09-30 02:21:23.639 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-7000"]
+2020-09-30 02:21:23.645 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-09-30 02:21:23.645 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.17]
+2020-09-30 02:21:23.731 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-09-30 02:21:23.731 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 927 ms
+2020-09-30 02:21:23.971 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-30 02:21:24.115 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-7000"]
+2020-09-30 02:21:24.146 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 7000 (http) with context path ''
+2020-09-30 02:21:24.148 [main] INFO  com.shine.faas.admin.FaasAdminServiceApplication - Started FaasAdminServiceApplication in 1.639 seconds (JVM running for 2.22)
+2020-09-30 02:21:24.150 [main] INFO  com.shine.faas.admin.FaasAdminServiceApplication - 启动完成...
+2020-09-30 02:21:24.153 [main] INFO  com.zaxxer.hikari.HikariDataSource - MyHikariCP - Starting...
+2020-09-30 02:21:28.728 [main] INFO  com.zaxxer.hikari.HikariDataSource - MyHikariCP - Start completed.
+2020-09-30 02:21:38.286 [http-nio-7000-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-09-30 02:21:38.286 [http-nio-7000-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-09-30 02:21:38.290 [http-nio-7000-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 4 ms
+2020-09-30 22:53:33.851 [main] INFO  com.shine.faas.admin.FaasAdminServiceApplication - Starting FaasAdminServiceApplication on wanc-desktop with PID 15276 (started by Administrator in C:\Users\Administrator\OneDrive - The University of Melbourne\SWEN90016-SPM\Assignment2\SWEN90016-A2\backend)
+2020-09-30 22:53:33.853 [main] INFO  com.shine.faas.admin.FaasAdminServiceApplication - No active profile set, falling back to default profiles: default
+2020-09-30 22:53:34.616 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$bcfc6bcb] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-30 22:53:34.844 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 7000 (http)
+2020-09-30 22:53:34.856 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-7000"]
+2020-09-30 22:53:34.863 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-09-30 22:53:34.863 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.17]
+2020-09-30 22:53:34.959 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-09-30 22:53:34.959 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1078 ms
+2020-09-30 22:53:35.340 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-30 22:53:35.622 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-7000"]
+2020-09-30 22:53:35.683 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 7000 (http) with context path ''
+2020-09-30 22:53:35.688 [main] INFO  com.shine.faas.admin.FaasAdminServiceApplication - Started FaasAdminServiceApplication in 2.068 seconds (JVM running for 2.697)
+2020-09-30 22:53:35.694 [main] INFO  com.shine.faas.admin.FaasAdminServiceApplication - 启动完成...
+2020-09-30 22:53:35.702 [main] INFO  com.zaxxer.hikari.HikariDataSource - MyHikariCP - Starting...
+2020-09-30 22:53:42.490 [main] INFO  com.zaxxer.hikari.HikariDataSource - MyHikariCP - Start completed.
+2020-09-30 22:56:03.234 [main] INFO  com.shine.faas.admin.FaasAdminServiceApplication - Starting FaasAdminServiceApplication on wanc-desktop with PID 1844 (started by Administrator in C:\Users\Administrator\OneDrive - The University of Melbourne\SWEN90016-SPM\Assignment2\SWEN90016-A2\backend)
+2020-09-30 22:56:03.237 [main] INFO  com.shine.faas.admin.FaasAdminServiceApplication - No active profile set, falling back to default profiles: default
+2020-09-30 22:56:03.941 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$6d9c1a6d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-30 22:56:04.146 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 7000 (http)
+2020-09-30 22:56:04.156 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-7000"]
+2020-09-30 22:56:04.163 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-09-30 22:56:04.164 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.17]
+2020-09-30 22:56:04.252 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-09-30 22:56:04.252 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 985 ms
+2020-09-30 22:56:04.520 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-30 22:56:04.669 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-7000"]
+2020-09-30 22:56:04.687 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 7000 (http) with context path ''
+2020-09-30 22:56:04.689 [main] INFO  com.shine.faas.admin.FaasAdminServiceApplication - Started FaasAdminServiceApplication in 1.712 seconds (JVM running for 2.331)
+2020-09-30 22:56:04.692 [main] INFO  com.shine.faas.admin.FaasAdminServiceApplication - 启动完成...
+2020-09-30 22:56:04.695 [main] INFO  com.zaxxer.hikari.HikariDataSource - MyHikariCP - Starting...
+2020-09-30 22:56:08.312 [main] INFO  com.zaxxer.hikari.HikariDataSource - MyHikariCP - Start completed.
+2020-09-30 22:57:17.142 [main] INFO  com.shine.faas.admin.FaasAdminServiceApplication - Starting FaasAdminServiceApplication on wanc-desktop with PID 4900 (started by Administrator in C:\Users\Administrator\OneDrive - The University of Melbourne\SWEN90016-SPM\Assignment2\SWEN90016-A2\backend)
+2020-09-30 22:57:17.145 [main] INFO  com.shine.faas.admin.FaasAdminServiceApplication - No active profile set, falling back to default profiles: default
+2020-09-30 22:57:17.948 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$af85ae37] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-30 22:57:18.146 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 7000 (http)
+2020-09-30 22:57:18.157 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-7000"]
+2020-09-30 22:57:18.163 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-09-30 22:57:18.163 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.17]
+2020-09-30 22:57:18.257 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-09-30 22:57:18.257 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1059 ms
+2020-09-30 22:57:18.500 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-30 22:57:18.644 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-7000"]
+2020-09-30 22:57:18.661 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 7000 (http) with context path ''
+2020-09-30 22:57:18.663 [main] INFO  com.shine.faas.admin.FaasAdminServiceApplication - Started FaasAdminServiceApplication in 1.822 seconds (JVM running for 2.437)
+2020-09-30 22:57:18.666 [main] INFO  com.shine.faas.admin.FaasAdminServiceApplication - 启动完成...
+2020-09-30 22:57:18.670 [main] INFO  com.zaxxer.hikari.HikariDataSource - MyHikariCP - Starting...
+2020-09-30 22:57:31.543 [main] INFO  com.zaxxer.hikari.HikariDataSource - MyHikariCP - Start completed.
+2020-09-30 22:59:05.788 [main] INFO  com.shine.faas.admin.FaasAdminServiceApplication - Starting FaasAdminServiceApplication on wanc-desktop with PID 14136 (started by Administrator in C:\Users\Administrator\OneDrive - The University of Melbourne\SWEN90016-SPM\Assignment2\SWEN90016-A2\backend)
+2020-09-30 22:59:05.791 [main] INFO  com.shine.faas.admin.FaasAdminServiceApplication - No active profile set, falling back to default profiles: default
+2020-09-30 22:59:06.458 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$fb062e21] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-30 22:59:06.664 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 7000 (http)
+2020-09-30 22:59:06.674 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-7000"]
+2020-09-30 22:59:06.680 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-09-30 22:59:06.680 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.17]
+2020-09-30 22:59:06.766 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-09-30 22:59:06.766 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 944 ms
+2020-09-30 22:59:07.002 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-30 22:59:07.136 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-7000"]
+2020-09-30 22:59:07.153 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 7000 (http) with context path ''
+2020-09-30 22:59:07.155 [main] INFO  com.shine.faas.admin.FaasAdminServiceApplication - Started FaasAdminServiceApplication in 1.626 seconds (JVM running for 2.249)
+2020-09-30 22:59:07.157 [main] INFO  com.shine.faas.admin.FaasAdminServiceApplication - 启动完成...
+2020-09-30 22:59:07.161 [main] INFO  com.zaxxer.hikari.HikariDataSource - MyHikariCP - Starting...
+2020-09-30 22:59:10.460 [main] INFO  com.zaxxer.hikari.HikariDataSource - MyHikariCP - Start completed.
+2020-09-30 23:01:06.508 [main] INFO  com.shine.faas.admin.FaasAdminServiceApplication - Starting FaasAdminServiceApplication on wanc-desktop with PID 7216 (started by Administrator in C:\Users\Administrator\OneDrive - The University of Melbourne\SWEN90016-SPM\Assignment2\SWEN90016-A2\backend)
+2020-09-30 23:01:06.510 [main] INFO  com.shine.faas.admin.FaasAdminServiceApplication - No active profile set, falling back to default profiles: default
+2020-09-30 23:01:07.173 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$b5c47085] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-30 23:01:07.375 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 7000 (http)
+2020-09-30 23:01:07.385 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-7000"]
+2020-09-30 23:01:07.392 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-09-30 23:01:07.392 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.17]
+2020-09-30 23:01:07.479 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-09-30 23:01:07.480 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 942 ms
+2020-09-30 23:01:07.731 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-30 23:01:07.875 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-7000"]
+2020-09-30 23:01:07.892 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 7000 (http) with context path ''
+2020-09-30 23:01:07.894 [main] INFO  com.shine.faas.admin.FaasAdminServiceApplication - Started FaasAdminServiceApplication in 1.642 seconds (JVM running for 2.281)
+2020-09-30 23:01:07.897 [main] INFO  com.shine.faas.admin.FaasAdminServiceApplication - 启动完成...
+2020-09-30 23:01:07.901 [main] INFO  com.zaxxer.hikari.HikariDataSource - MyHikariCP - Starting...
+2020-09-30 23:01:12.039 [main] INFO  com.zaxxer.hikari.HikariDataSource - MyHikariCP - Start completed.
+2020-09-30 23:01:48.483 [main] INFO  com.shine.faas.admin.FaasAdminServiceApplication - Starting FaasAdminServiceApplication on wanc-desktop with PID 7612 (started by Administrator in C:\Users\Administrator\OneDrive - The University of Melbourne\SWEN90016-SPM\Assignment2\SWEN90016-A2\backend)
+2020-09-30 23:01:48.486 [main] INFO  com.shine.faas.admin.FaasAdminServiceApplication - No active profile set, falling back to default profiles: default
+2020-09-30 23:01:49.163 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$b0b708fa] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-30 23:01:49.362 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 7000 (http)
+2020-09-30 23:01:49.372 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-7000"]
+2020-09-30 23:01:49.377 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-09-30 23:01:49.378 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.17]
+2020-09-30 23:01:49.472 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-09-30 23:01:49.472 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 955 ms
+2020-09-30 23:01:49.719 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-30 23:01:49.863 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-7000"]
+2020-09-30 23:01:49.880 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 7000 (http) with context path ''
+2020-09-30 23:01:49.882 [main] INFO  com.shine.faas.admin.FaasAdminServiceApplication - Started FaasAdminServiceApplication in 1.655 seconds (JVM running for 2.283)
+2020-09-30 23:01:49.884 [main] INFO  com.shine.faas.admin.FaasAdminServiceApplication - 启动完成...
+2020-09-30 23:01:49.888 [main] INFO  com.zaxxer.hikari.HikariDataSource - MyHikariCP - Starting...
+2020-09-30 23:01:53.562 [main] INFO  com.zaxxer.hikari.HikariDataSource - MyHikariCP - Start completed.
+2020-09-30 23:04:31.711 [main] INFO  com.shine.faas.admin.FaasAdminServiceApplication - Starting FaasAdminServiceApplication on wanc-desktop with PID 22292 (started by Administrator in C:\Users\Administrator\OneDrive - The University of Melbourne\SWEN90016-SPM\Assignment2\SWEN90016-A2\backend)
+2020-09-30 23:04:31.714 [main] INFO  com.shine.faas.admin.FaasAdminServiceApplication - No active profile set, falling back to default profiles: default
+2020-09-30 23:04:32.369 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$be04d3c1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-30 23:04:32.568 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 7000 (http)
+2020-09-30 23:04:32.579 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-7000"]
+2020-09-30 23:04:32.585 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-09-30 23:04:32.585 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.17]
+2020-09-30 23:04:32.675 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-09-30 23:04:32.675 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 931 ms
+2020-09-30 23:04:32.921 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-30 23:04:33.077 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-7000"]
+2020-09-30 23:04:33.095 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 7000 (http) with context path ''
+2020-09-30 23:04:33.097 [main] INFO  com.shine.faas.admin.FaasAdminServiceApplication - Started FaasAdminServiceApplication in 1.632 seconds (JVM running for 2.278)
+2020-09-30 23:04:33.100 [main] INFO  com.shine.faas.admin.FaasAdminServiceApplication - 启动完成...
+2020-09-30 23:04:33.105 [main] INFO  com.zaxxer.hikari.HikariDataSource - MyHikariCP - Starting...
+2020-09-30 23:04:36.688 [main] INFO  com.zaxxer.hikari.HikariDataSource - MyHikariCP - Start completed.
+2020-09-30 23:04:49.814 [http-nio-7000-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-09-30 23:04:49.815 [http-nio-7000-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-09-30 23:04:49.819 [http-nio-7000-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 4 ms
+2020-09-30 23:14:31.541 [main] INFO  com.shine.faas.admin.FaasAdminServiceApplication - Starting FaasAdminServiceApplication on wanc-desktop with PID 3480 (started by Administrator in C:\Users\Administrator\OneDrive - The University of Melbourne\SWEN90016-SPM\Assignment2\SWEN90016-A2\backend)
+2020-09-30 23:14:31.543 [main] INFO  com.shine.faas.admin.FaasAdminServiceApplication - No active profile set, falling back to default profiles: default
+2020-09-30 23:14:32.219 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$26942d09] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-30 23:14:32.422 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 7000 (http)
+2020-09-30 23:14:32.432 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-7000"]
+2020-09-30 23:14:32.438 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-09-30 23:14:32.438 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.17]
+2020-09-30 23:14:32.526 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-09-30 23:14:32.526 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 950 ms
+2020-09-30 23:14:32.759 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-30 23:14:32.891 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-7000"]
+2020-09-30 23:14:32.907 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 7000 (http) with context path ''
+2020-09-30 23:14:32.910 [main] INFO  com.shine.faas.admin.FaasAdminServiceApplication - Started FaasAdminServiceApplication in 1.638 seconds (JVM running for 2.278)
+2020-09-30 23:14:32.912 [main] INFO  com.shine.faas.admin.FaasAdminServiceApplication - 启动完成...
+2020-09-30 23:14:32.916 [main] INFO  com.zaxxer.hikari.HikariDataSource - MyHikariCP - Starting...
+2020-09-30 23:14:40.978 [main] INFO  com.zaxxer.hikari.HikariDataSource - MyHikariCP - Start completed.
+2020-09-30 23:43:12.063 [main] INFO  com.shine.faas.admin.FaasAdminServiceApplication - Starting FaasAdminServiceApplication on wanc-desktop with PID 18344 (started by Administrator in C:\Users\Administrator\OneDrive - The University of Melbourne\SWEN90016-SPM\Assignment2\SWEN90016-A2\backend)
+2020-09-30 23:43:12.065 [main] INFO  com.shine.faas.admin.FaasAdminServiceApplication - No active profile set, falling back to default profiles: default
+2020-09-30 23:43:12.736 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$bd2f4955] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-30 23:43:12.939 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 7000 (http)
+2020-09-30 23:43:12.949 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-7000"]
+2020-09-30 23:43:12.954 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-09-30 23:43:12.954 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.17]
+2020-09-30 23:43:13.044 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-09-30 23:43:13.044 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 953 ms
+2020-09-30 23:43:13.282 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-30 23:43:13.418 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-7000"]
+2020-09-30 23:43:13.434 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 7000 (http) with context path ''
+2020-09-30 23:43:13.436 [main] INFO  com.shine.faas.admin.FaasAdminServiceApplication - Started FaasAdminServiceApplication in 1.634 seconds (JVM running for 2.293)
+2020-09-30 23:43:13.438 [main] INFO  com.shine.faas.admin.FaasAdminServiceApplication - 启动完成...
+2020-09-30 23:43:13.441 [main] INFO  com.zaxxer.hikari.HikariDataSource - MyHikariCP - Starting...
+2020-09-30 23:43:18.269 [main] INFO  com.zaxxer.hikari.HikariDataSource - MyHikariCP - Start completed.
+2020-09-30 23:43:38.109 [http-nio-7000-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-09-30 23:43:38.110 [http-nio-7000-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-09-30 23:43:38.114 [http-nio-7000-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 4 ms

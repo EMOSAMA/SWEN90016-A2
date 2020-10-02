@@ -4,7 +4,7 @@ import java.util.UUID;
 
 public class BillerInfo {
     UUID id;
-    UUID userId;
+    UUID customerId;
     String name;
     String email;
 
@@ -16,12 +16,12 @@ public class BillerInfo {
         this.id = id;
     }
 
-    public UUID getUserId() {
-        return userId;
+    public UUID getCustomerId() {
+        return customerId;
     }
 
-    public void setUserId(UUID userId) {
-        this.userId = userId;
+    public void setCustomerId(UUID customerId) {
+        this.customerId = customerId;
     }
 
     public String getName() {

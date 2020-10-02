@@ -17,8 +17,10 @@ public class Appointment extends BaseEntity {
     UUID serviceId;
     @Column(name = "location")
     String location;
+    @Column(name = "date")
+    Date date;
     @Column(name = "time")
-    Date time;
+    Integer time;
     @Column(name = "status")
     String status;
     @Column(name = "message")
@@ -40,13 +42,22 @@ public class Appointment extends BaseEntity {
         this.serviceId = serviceId;
     }
 
-    public Date getTime() {
+    public Date getDate() {
+        return date;
+    }
+
+    public void setDate(Date date) {
+        this.date = date;
+    }
+
+    public Integer getTime() {
         return time;
     }
 
-    public void setTime(Date time) {
+    public void setTime(Integer time) {
         this.time = time;
     }
+
 
     public String getLocation() {
         return location;

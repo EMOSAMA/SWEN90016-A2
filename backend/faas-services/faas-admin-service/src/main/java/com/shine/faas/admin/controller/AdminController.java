@@ -47,10 +47,10 @@ public class AdminController {
      * @return
      */
     @RequestMapping(value = "/admin/password", method = RequestMethod.PUT)
-    public ReturnInfo adminChangePassword(@RequestBody ModifyPwdInfo modifyUserPwdInfo) {
+    public ReturnInfo adminChangePassword(@RequestBody ModifyPwdInfo modifyPwdInfo) {
         DbContext context = OrmManager.instance().createDbContext(false);
         return ActionUtil.doAction(context, () -> {
-            return adminService.changePassword(context, modifyUserPwdInfo);
+            return adminService.changePassword(context, modifyPwdInfo);
         });
     }
 

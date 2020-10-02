@@ -15,11 +15,11 @@ import java.util.UUID;
 public class AdminRepository extends CrudRepository<Admin, UUID> {
 
     @Query(name = "getAuthorizeUser", value =
-            "SELECT * FROM  admin WHERE username = :userName AND password = :password AND recycled = FALSE ")
+            "SELECT * FROM  admin WHERE email = :email AND password = :password AND recycled = FALSE ")
     public Admin getAuthorizeUser(DbContext context, String userName, String password) throws Exception {
         String sql = QueryHelper.getQuery(this.getClass(), "getAuthorizeUser");
         OrmQueryInfo queryInfo = new OrmQueryInfo();
-        queryInfo.getParameters().put("userName", userName);
+        queryInfo.getParameters().put("email", userName);
         queryInfo.getParameters().put("password", password);
         return OrmQueryAssitant.queryOne(context, sql, queryInfo, Admin.class);
     }

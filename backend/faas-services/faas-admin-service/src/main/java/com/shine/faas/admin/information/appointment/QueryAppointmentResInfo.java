@@ -12,8 +12,10 @@ public class QueryAppointmentResInfo extends AbstractEntity {
     UUID serviceId;
     @Column(name = "location")
     String location;
+    @Column(name = "date")
+    Date date;
     @Column(name = "time")
-    Date time;
+    Integer time;
     @Column(name = "status")
     String status;
     @Column(name = "message")
@@ -47,12 +49,20 @@ public class QueryAppointmentResInfo extends AbstractEntity {
         this.location = location;
     }
 
-    public Date getTime() {
+    public Integer getTime() {
         return time;
     }
 
-    public void setTime(Date time) {
+    public void setTime(Integer time) {
         this.time = time;
+    }
+
+    public Date getDate() {
+        return date;
+    }
+
+    public void setDate(Date date) {
+        this.date = date;
     }
 
     public String getStatus() {

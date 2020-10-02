@@ -1,12 +1,7 @@
 package com.shine.faas.admin.controller;
-
-import com.shine.faas.admin.information.admin.CreateAdminReqInfo;
-import com.shine.faas.admin.information.admin.QueryAdminReqInfo;
-import com.shine.faas.admin.information.admin.UpdateAdminReqInfo;
 import com.shine.faas.admin.information.service.CreateServiceReqInfo;
 import com.shine.faas.admin.information.service.QueryServiceReqInfo;
 import com.shine.faas.admin.information.service.UpdateServiceReqInfo;
-import com.shine.faas.admin.service.CustomerService;
 import com.shine.faas.admin.service.ServiceService;
 import com.shine.faas.common.DbContext;
 import com.shine.faas.common.information.ReturnInfo;

@@ -17,13 +17,13 @@ import java.util.UUID;
 public class CustomerRepository extends CrudRepository<Customer, UUID> {
 
     @Query(name = "getAuthorizeUser", value =
-            "SELECT * FROM  customer WHERE username = :userName AND password = :password AND recycled = FALSE ")
-    public Customer getAuthorizeUser(DbContext context, String userName, String password) throws Exception {
+            "SELECT * FROM  customer WHERE email = :email AND password = :password AND recycled = FALSE ")
+    public Customer getAuthorizeUser(DbContext context, String username, String password) throws Exception {
         String sql = QueryHelper.getQuery(this.getClass(), "getAuthorizeUser");
         OrmQueryInfo queryInfo = new OrmQueryInfo();
-        queryInfo.getParameters().put("userName", userName);
+        queryInfo.getParameters().put("email", username);
         queryInfo.getParameters().put("password", password);
-        return OrmQueryAssitant.queryOne(context, sql, queryInfo, Admin.class);
+        return OrmQueryAssitant.queryOne(context, sql, queryInfo, Customer.class);
     }
 
     @Query(name = "queryCustomer", value =

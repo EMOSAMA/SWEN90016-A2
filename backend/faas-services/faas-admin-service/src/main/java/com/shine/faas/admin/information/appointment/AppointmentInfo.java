@@ -7,7 +7,8 @@ public class AppointmentInfo {
     UUID id;
     UUID customer_id;
     UUID service_id;
-    Date time;
+    Date date;
+    Integer time;
     String location;
     String status;
     String message;
@@ -36,12 +37,20 @@ public class AppointmentInfo {
         this.service_id = service_id;
     }
 
-    public Date getTime() {
+    public Integer getTime() {
         return time;
     }
 
-    public void setTime(Date time) {
+    public void setTime(Integer time) {
         this.time = time;
+    }
+
+    public Date getDate() {
+        return date;
+    }
+
+    public void setDate(Date date) {
+        this.date = date;
     }
 
     public String getLocation() {

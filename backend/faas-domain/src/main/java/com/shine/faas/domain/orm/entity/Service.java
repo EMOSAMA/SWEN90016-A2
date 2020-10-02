@@ -5,37 +5,39 @@ import com.shine.faas.common.orm.annotation.Column;
 import com.shine.faas.common.orm.annotation.Entity;
 import com.shine.faas.common.orm.annotation.Table;
 
+import java.math.BigDecimal;
+
 @Entity
 @Table(name = "service")
 public class Service extends BaseEntity {
     @Column(name = "service_name")
-    String serviceNanme;
+    String serviceName;
     @Column(name = "cost")
-    Float cost;
+    BigDecimal cost;
     @Column(name = "duration")
-    Float duration;
+    BigDecimal duration;
 
-    public String getServiceNanme() {
-        return serviceNanme;
+    public String getServiceName() {
+        return serviceName;
     }
 
-    public void setServiceNanme(String serviceNanme) {
-        this.serviceNanme = serviceNanme;
+    public void setServiceName(String serviceName) {
+        this.serviceName = serviceName;
     }
 
-    public Float getCost() {
+    public BigDecimal getCost() {
         return cost;
     }
 
-    public void setCost(Float cost) {
+    public void setCost(BigDecimal cost) {
         this.cost = cost;
     }
 
-    public Float getDuration() {
+    public BigDecimal getDuration() {
         return duration;
     }
 
-    public void setDuration(Float duration) {
+    public void setDuration(BigDecimal duration) {
         this.duration = duration;
     }
 }
